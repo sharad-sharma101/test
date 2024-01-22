@@ -1,0 +1,30 @@
+.coupon-box
+    display: flex
+    padding: var(--padding-10) var(--padding-14)
+    align-items: center
+    gap: 0.5rem
+    max-height: 2rem
+    color: var(--color-light-gray)
+    border-radius: var(--border-radius-8)
+    border: 1px solid var(--color--white-dark)
+    background: var(--color-white-faint)  
+    &:focus-visible
+        border: none
+        outline: none
+    &:focus
+        box-shadow: 0px 0px 0px 4px #F4EBFF, 0px 1px 2px 0px rgba(16, 24, 40, 0.05)
+        color: var(--color--black-normal)
+    
+.warning-variant-name-input
+    border: 2px solid var(--color-danger-dark) !important
+    animation: blink 1s infinite
+
+    &:focus
+        box-shadow: none
+    
+.discount-code__wrapper input 
+    height: 3rem
+    width: 8rem
+
+.discount-code__wrappers .trigger-section__container input
+    height: 2.2rem !important   

@@ -1,0 +1,113 @@
+.page-container-wrapper {
+    margin: auto;
+    min-width: 78.75rem;
+    width: 50%;
+    margin-top: 10vh;
+}
+
+.thank-you-page {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content:center;
+}
+.attryb-logo-image-wrapper {
+    height: 6.5rem;
+}
+.attryb-logo-image-wrapper > img {
+    object-fit: contain;
+}
+.page-main-heading {
+    margin: 1.25rem 0;
+    font-size: large;
+    font-weight: 500;
+}
+.page-paragraph {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 4rem;;
+}
+
+.page-paragraph > p {
+    font-size: medium;
+    color: rgb(75, 75, 75);
+    margin: 0.2rem 0;
+}
+
+.page-button-wrapper {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    margin: 0.625rem 0;
+    flex-wrap: wrap;
+}
+
+.btn-create-and-login {
+    box-shadow: 0.4rem 0.4rem #f0eeee;
+    background-color: #fff;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    border: none;
+    padding: 1rem 0.8rem;
+    cursor: pointer;
+    font-size: medium;
+    color: rgb(42, 42, 42);
+}
+.button-text {
+    color: black;
+}
+
+@media only screen and (max-width: 1036px) {
+    
+    .page-container-wrapper {
+        width: 70%;;
+    }
+    .page-container-wrapper {
+        min-width: 0;
+    }
+    .page-main-heading {
+        margin: 1.1rem 0;
+        font-size: medium }
+    .page-paragraph {
+        margin-bottom: 3rem;;
+    }
+    
+    .page-paragraph > p {
+        font-size: 0.9rem;
+        margin: 0.2rem 0;
+    }
+    
+    .page-button-wrapper {
+        margin: 0.625rem 0;  
+    }
+
+    .page-button-wrapper > Button {
+        margin: 1rem 0;
+    }
+    
+  }
+
+  @media only screen and (max-width: 507px) {
+    .page-container-wrapper {
+        width: 80%;;
+    }
+    .page-main-heading {
+        margin: 1rem 0;
+        font-size: medium }
+    .page-paragraph {
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+    
+    .page-paragraph > p {
+        font-size: 0.9rem;
+        margin: 0.2rem 0;
+    }
+
+    .button-text {
+       font-size: 12px;
+    }
+    
+  }

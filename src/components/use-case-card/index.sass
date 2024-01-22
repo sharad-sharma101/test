@@ -1,0 +1,59 @@
+@use '../../styles/sass' as *
+    
+.use-case-card
+    @include flex(row, center, start)
+    padding: 16px
+    gap: 16px
+    width: 100%
+
+    // width: 422px
+    // height: 108px
+
+    // background: #f8f8f873
+    /* Shadow/Card */
+    box-shadow: 0 0.17rem 0.33rem -0.08rem rgba(23,43,77,.16)
+    border-radius: 8px
+    // filter: grayscale(0.5)
+
+    .use-case-card__icon
+        min-width: 48px
+        min-height: 48px
+        width: 48px
+        height: 48px
+
+        img
+            width: 100%
+            height: 100%
+
+.use-case-card.active
+    background: #6e40ff
+    color: #FFF
+
+    .use-case-card__body-heading
+        color: #FFF
+
+    .use-case-card__body-para
+        color: #FFF
+
+
+.use-case-card__body-heading
+    font-style: normal
+    font-weight: 700
+    font-size: 16px
+    line-height: 20px
+    color: #172B4D
+    margin-bottom: 8px
+
+.use-case-card__body-para
+    font-style: normal
+    font-weight: 400
+    font-size: 12px
+    line-height: 16px
+    color: #6B788D
+
+    text-overflow: clip
+    overflow: hidden
+    display: -webkit-box
+    -webkit-box-orient: vertical
+    -webkit-line-clamp: 2
+

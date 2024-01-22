@@ -1,0 +1,146 @@
+
+.preview-popup-body--container
+    display: flex
+    max-width: 84rem
+    background: var(--color-white-faint)
+    z-index: 9
+    margin-top: 3rem
+    position: fixed
+    left: 50%
+    transform: translateX(-50%)
+    scrollbar-width: none
+    overflow-y: hidden
+    overflow-x: hidden
+    max-height: 52.18rem
+    height: 100%    
+   
+    &::-webkit-scrollbar
+        display: none
+    
+    .left-side-preview-popup
+        background: var(--color-white-normal)
+        padding: var(--padding-24)
+        display: flex 
+        flex-direction: column
+        justify-content: space-between
+        width: 21rem
+        height: 95%
+
+        .upper-container
+            display: flex 
+            flex-direction: column
+            gap: 1rem
+
+            .variant-icon--wrapper
+                width: 3rem 
+                height: 3rem
+
+                img
+                    width: 100% 
+                    height: 100%
+.right-side-preview-popup
+    display: flex
+    flex-direction: column
+    gap: 1rem             
+    width: 63rem
+    padding: var(--padding-24)
+    margin: auto
+    // margin-bottom: 5rem
+    background: white
+
+    .tab-change-container
+        width: 100% 
+        display: flex 
+        justify-content: center
+        align-content: center 
+        position: relative
+
+        .cross-popup--wrapper
+            position: absolute 
+            right: 0
+            cursor: pointer 
+            width: 1.5rem
+            height: 1.5rem
+
+            img 
+                width: 100%
+                height: 100%
+
+        .device-switcher--wrapper 
+            display: flex 
+            gap: .5rem
+            padding: var(--padding-4)
+            background: var(--color--white-off)
+            border: 1px solid var(--color--white-dark)
+            border-radius: var(--border-radius-8)
+
+            .device-switcher--wrapper 
+                background: var(--color--white-off)
+                padding: var(--padding-8) var(--padding-12)
+                cursor: pointer
+                border: 0px
+
+            .device-switcher--wrapper.selected-device 
+                background: var(--color-white-faint)
+                box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.06), 0px 1px 3px 0px rgba(16, 24, 40, 0.10)
+            
+.placement-images-container
+    display: flex 
+    width: 100%
+    flex-direction: column
+    align-items: center
+
+.preview-popup--footer
+    display: flex 
+    flex-direction: column
+    gap: .5rem
+
+.device-view-main-page
+    max-width: 9rem
+    max-height: 5.0625rem
+
+.main-page-container
+    width: 9rem
+    height: 5.0625rem
+    border: 2px solid var(--color--black-standard) 
+    border-radius: var(--border-radius-4)
+    position: relative
+
+    .background-image-wapper
+        width: 100%
+        height: 100%
+
+        img
+            width: 100% 
+            height: 100%
+
+    .placement--wrapper
+        width: 100% 
+        height: 100%
+        transform: scale(0.3)
+
+.supporting-text
+    color: var(--color--black-standard)
+
+.previwe-device--wrapper
+    display: flex 
+    flex-direction: row
+    width: 100%
+    justify-content: center
+
+.use-template-btn-wrapper
+    width: 18rem
+    height: 2.75rem 
+    
+
+    .Button 
+        justify-content: center
+        width: 100%
+
+.variant-tags
+    display: flex
+    gap: 1rem
+    flex-wrap: wrap
+.button-wrapper
+    width: 100%
+

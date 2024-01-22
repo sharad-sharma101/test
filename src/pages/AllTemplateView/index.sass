@@ -1,0 +1,42 @@
+.see-all-template-wrapper
+    display: flex 
+    flex-direction: column
+    gap: 1.6875rem
+    padding: var(--padding-24) var(--padding-96)
+    overflow-y: scroll 
+    
+    .selecting-header-heading
+        display: flex 
+        flex-direction: row 
+        justify-content: space-between
+        align-items: center
+
+        .left-section-header 
+            display: flex 
+            flex-direction: row 
+            gap: 1rem
+            border-bottom: 1px solid var(--color--white-dark)
+
+            .selecting-template-heading
+                cursor: pointer 
+                padding: var(--padding-8) var(--padding-4)
+
+            .selected-option
+                border-bottom: 2px solid var(--color-black-standard)
+    .all-templates-card-outer-wrapper
+        display: flex 
+        flex-direction: column
+        gap: 1.5rem
+
+        .template-grid-wrapper 
+
+            .master-template-section
+                display: grid   
+                flex-direction: row  
+                flex-wrap: wrap
+                justify-content: space-between    
+                gap: 5rem
+                align-items: flex-start
+                column-gap: 2.5rem
+                row-gap: 2.5rem
+                grid-template-columns: repeat(auto-fill, minmax(15.75rem, 1fr))

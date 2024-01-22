@@ -1,0 +1,40 @@
+[
+  {
+    "name": "Web Personalisation",
+    "icon": "/src/assets/images/navbar/personalization.svg",
+    "id": "1047418f96ab219e099e492b71bfb3e3",
+    "link": "/home",
+    "openIn": "redirect",
+    "subPages": []
+  },
+  {
+    "name": "Content Studio",
+    "icon": "/src/assets/images/navbar/content-studio.svg",
+    "id": "1047418f96ab219e099e492b71bfb3e222",
+    "link": "",
+    "openIn": "_blank",
+    "subPages": [
+      {
+        "name": "Dashboard",
+        "icon": "/src/assets/images/navbar/project.svg",
+        "id": "1",
+        "link": "https://contentstudio.attryb.com/dashboard",
+        "openIn": "_blank"
+      },
+      {
+        "name": "Templates",
+        "icon": "/src/assets/images/navbar/templates.svg",
+        "id": "2",
+        "link": "https://contentstudio.attryb.com/content-studio/templates",
+        "openIn": "_blank"
+      },
+      {
+        "name": "Projects",
+        "icon": "/src/assets/images/navbar/project.svg",
+        "id": "3",
+        "link": "https://contentstudio.attryb.com/content-studio/projects",
+        "openIn": "_blank"
+      }
+    ]
+  }
+]

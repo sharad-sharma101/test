@@ -1,0 +1,20 @@
+@use '../../styles/sass' as *
+
+.edit-textarea
+    padding: var(--padding-12) var(--padding-14)
+    height: 6rem
+    width: 100%
+    letter-spacing: normal
+    resize: none
+    box-shadow: 0rem .0625rem .125rem rgba(16, 24, 40, 0.05)
+    border: .0625rem solid var(--color--white-dark)
+    border-radius: 8px
+    margin-top:.375rem
+    &:focus-visible
+        border: none
+        outline: none
+    &:focus
+        box-shadow: 0px 0px 0px 4px var(--color--primary-light) , 0px 1px 2px 0px  #1018280D
+        border: 1px solid var( --color--primary-normal)
+        color: var(--color--black-normal)
+        outline: none

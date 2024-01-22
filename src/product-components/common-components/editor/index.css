@@ -1,0 +1,26 @@
+.editor-class {
+  padding: 0rem 1rem;
+  border: 1px solid #fff;
+}
+
+.editor-class.focus {
+  border: 1px dotted #6e40ff;
+}
+
+.toolbar-class {
+  border: 1px solid #ccc;
+}
+
+.wrapper-editor-class {
+  width: 100%;
+}
+.DraftEditor-root {
+  height: unset !important;
+}
+
+.rdw-editor-main {
+  overflow: hidden !important;
+}
+.public-DraftStyleDefault-block {
+  margin: 0.3em 0 !important;
+}

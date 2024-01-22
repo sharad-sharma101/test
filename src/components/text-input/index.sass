@@ -1,0 +1,60 @@
+@use '../../styles/sass' as *
+
+.text-input-container
+    display: flex
+    // border: 1px solid red
+    flex-direction: column
+    justify-content: flex-start
+    align-items: flex-start
+    width: 100%
+    gap:0.375rem
+    // padding: 0rem var(--padding-14)
+
+    
+.input-label-text
+    color: var(--color--black-standard)
+    width: 100%
+
+.text-input-form-field
+    position: relative
+    width: 100%
+    opacity: 1
+    gap: .5rem
+
+.input-field-area
+
+    width: 100%
+    display: flex
+    align-items: center
+    gap: 0.5rem
+    padding: var(--padding-10) var(--padding-14)
+    color: var(--color-light-gray)
+    border-radius: var(--border-radius-8)
+    border: 1px solid var(--color--white-dark)
+    background: var(--color-white-faint)
+    height: 2.5rem
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05)
+    box-sizing: border-box
+
+    &:focus-visible
+        border: none
+        outline: none
+    &:focus
+        box-shadow: 0px 0px 0px 4px var(--color--primary-light) , 0px 1px 2px 0px  #1018280D
+        border: 1px solid var( --color--primary-normal)
+        color: var(--color--black-normal)
+        outline: none
+    &.input-field-area:disabled 
+        border: 1px solid var(--color--grey-off)
+        background: var( --color--white-off)
+        color: var(--color-light-gray)
+        // cursor: not-allowed
+    
+
+.error_text.input
+    color: var(--color-danger-normal)
+    display: inline-block
+    font-size: .75rem
+    line-height: .9375rem
+    margin-bottom: .75rem
+    display: inline-block

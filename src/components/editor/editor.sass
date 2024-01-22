@@ -1,0 +1,317 @@
+#editor
+    height: 100% !important
+
+.editor-section
+    height: 100%
+    width: 100% 
+
+
+//  CUSTOM CSS
+
+.swiper-container
+    overflow: hidden
+
+.gjs-one-bg      
+    background:  var(--color-white-faint)
+
+
+.gjs-two-color
+    color: var(--color-black-normal)
+
+.gjs-three-bg
+    background-color: var(--color-primary-standard)
+
+.gjs-four-color
+    color: var(--color-primary-standard)
+    &:hover
+        color: var(--color-primary-standard)
+    
+.gjs-four-color-h:hover 
+    color: var(--color-primary-standard)
+
+.gjs-field 
+    background-color: var(--color--white-off)
+
+// form pannel tabs on left side
+.gjs-pn-views
+    left: 0
+    width: 25rem !important
+    background: var(--color--white-off)
+    border: none
+    border-bottom: 1px solid var(--color--white-dark)
+    border-right: 2px solid var(--color--white-dark)
+    padding: 0px
+    padding-top: 0.3125rem
+    height: 3.3rem
+ 
+.gjs-editor.gjs-one-bg.gjs-two-color 
+    border-top: 2px solid var(--color--white-dark)
+ 
+.gjs-pn-views-container
+    box-shadow: none !important
+    left: 0
+    width: 25rem !important
+    border-right: 2px solid var(--color--white-dark)
+
+.gjs-pn-commands
+    right: 0 !important
+
+.gjs-pn-commands
+    box-shadow: none !important
+    right: 0
+
+.gjs-cv-canvas
+    right: 0 !important
+    left: 25rem
+    width: calc(100% - 25rem) !important
+    border: 1px solid var(--color--white-dark)
+    top: 3.3rem !important
+    border-left: 0px
+    height: calc(100% - 3.3rem) !important
+
+.gjs-pn-devices-c
+    left: 25rem
+    padding: .425rem var(--padding-8) !important
+
+    .gjs-pn-btn
+        max-height: 2.25rem 
+        max-width: 2.75rem
+
+    .desktop , .tablet , .mobile
+        padding: var(--padding-8) var(--padding-12) !important
+        img
+            height: 1.25rem !important
+            width: 1.25rem !important
+
+    .desktop.--active , .tablet.--active , .mobile.--active 
+        background: var(--color--primary-faint)
+
+
+.gjs-pn-options
+    right: 80%
+
+.gjs-category-title, .gjs-layer-title, .gjs-block-category .gjs-title, .gjs-sm-sector-title
+    font-weight: bold
+    background-color: var(--color--white-off)
+    border: none
+
+.gjs-sm-sector
+    font-weight: bold
+.gjs-sm-sector
+    opacity: 0.8
+
+.gjs-clm-tag
+    color: var(--color--main-white)
+
+.gjs-sm-composite.gjs-clm-select, .gjs-sm-composite.gjs-clm-field
+    background-color: var(--color--main-white)
+    border: 0px
+
+.fa-paint-brush:before 
+    content: "Styles"
+
+.fa-cog:before 
+    content: "Settings"
+
+.fa-bars:before 
+    content: "Layers"
+
+.fa-th-large:before 
+    content: "Manager"
+
+.gjs-sm-sector-label , .gjs-clm-header-label , .gjs-traits-label
+    font-size: var(--text-sm-fs)
+    font-style: normal
+    font-weight: 500
+    line-height: var(--text-sm-lh)
+
+.gjs-pn-active
+        background-color: rgba(0,0,0,0) !important
+        box-shadow: none !important
+
+.gjs-sm-header , .gjs-trt-header , .gjs-label-wrp .gjs-label , .gjs-title
+    color: var(--color-black-pure)
+    font-weight: normal
+
+.gjs-frame-wrapper
+    background-color: var(--color--primary-faint) !important
+
+.gjs-pn-views
+
+    .gjs-pn-btn
+        width: 25%
+        padding: var(--padding-12)
+        margin: 0px
+        border-bottom: 2px solid var(--color--white-off)
+        font-size: var(--text-md-fs)
+        font-style: normal
+        font-weight: 600
+        line-height: var(--text-md-lh)
+
+    .gjs-pn-btn.gjs-pn-active
+        border-bottom: 2px solid var(--color-primary-standard)
+        border-radius: none
+        
+.gjs-layer-name
+    color: var(--color-light-gray)
+    font-size: var(--text-sm-fs)
+    font-style: normal
+    font-weight: 400
+    line-height: var(--text-sm-lh)
+    padding-top: 2px
+
+.gjs-sm-sector-title
+    border: none 
+    background-color: var(--color--white-off)
+
+.gjs-pn-views-container
+    scrollbar-width: none
+    &::-webkit-scrollbar
+        display: none
+
+.gjs-blocks-c
+    justify-content: space-between !important
+
+.gjs-block-category.gjs-open
+    border: none !important
+
+.gjs-block-category .gjs-title
+    border-radius: var(--border-radius-4)
+    border-top: 1px solid var(--color--white-dark)
+    border-bottom: 1px solid var(--color--white-dark)
+
+.gjs-blocks-c 
+    .gjs-block 
+        box-shadow: none !important
+        width: 6.75rem
+        height: 6rem 
+        min-height: 5.5rem !important
+        margin: 4px !important
+        align-items: center
+        padding: 15px 27px 15px 28px
+        border-radius: var(--border-radius-4)
+        border: 1px solid var(--color--white-dark)
+        background: var(--color--main-white)
+        .gjs-block__media
+            width: 1.75rem
+            height: 1.75rem
+        .gjs-block-label
+            color: var(--color-light-gray)
+            font-size: var(--text-sm-fs)
+            font-style: normal
+            font-weight: 400
+            line-height: var(--text-sm-lh)
+            white-space: nowrap
+.gjs-layer-count
+    font-weight: 400
+
+.gjs-pn-views-container .gjs-title 
+    font-size: var(--text-sm-fs)
+    font-style: normal
+    font-weight: 600
+    line-height: var(--text-sm-lh)
+
+.gjs-sm-sector-title 
+    border-top: 1px solid var(--color--white-dark)
+    border-bottom: 1px solid var(--color--white-dark)
+
+.gjs-sm-property
+    margin-bottom: 16px
+
+.gjs-sm-sector__dimension 
+
+    .gjs-sm-integer
+        display: flex
+        justify-content: space-between
+        .gjs-fields
+            width: 50%
+    .gjs-sm-property__margin , .gjs-sm-property__padding
+        .gjs-fields
+            border-radius: var(--border-radius-4)
+            border: 1px solid var(--color--white-dark)
+            background: var(--color--white-off)
+
+.gjs-sm-property__text-align 
+    .gjs-fields
+        width: 75% !important
+
+.gjs-sm-sector__typography
+
+    .gjs-sm-number , .gjs-sm-select , .gjs-sm-color , .gjs-sm-radio , .gjs-sm-stack 
+        display: flex
+        justify-content: space-between
+        width: 100%
+        .gjs-fields
+            width: 50%
+    .gjs-sm-property__text-align
+        input[type="radio"]
+            display: none 
+        .gjs-radio-item
+            align-items: center
+    
+.gjs-sm-property__text-shadow , .gjs-sm-sector__decorations
+    button
+        top: 7px !important 
+        color: var(--color-black-pure) !important
+        fill: var(--color-black-pure) !important
+    .gjs-field
+        background-color: rgba(0,0,0,0) !important
+    
+.gjs-field input, .gjs-field select, .gjs-field textarea 
+    background-color: var(--color--white-dark)
+    color: var(--color--black-standard)
+
+.gjs-sm-sector__decorations
+    .gjs-sm-property__box-shadow , .gjs-sm-property__background 
+        button
+            top: 7px !important 
+            color: var(--color-black-pure) !important
+            fill: var(--color-black-pure) !important
+        .gjs-field
+            background-color: rgba(0,0,0,0) !important
+        .gjs-sm-number , .gjs-sm-select , .gjs-sm-color , .gjs-sm-radio , .gjs-sm-stack 
+            display: flex
+            justify-content: space-between
+            width: 100%
+        .gjs-fields
+            width: 50%
+.gjs-sm-field.gjs-sm-composite, .gjs-sm-composite.gjs-clm-select, .gjs-sm-composite.gjs-clm-field
+    background-color: #fff
+    border: 0px
+
+.gjs-cv-canvas__frames .gjs-frames .gjs-frame-wrapper
+    background: var(--color--white-off)
+
+.gjs-pn-views-container
+    padding: 3.3rem 0px 0px
+
+.gjs-sm-sector__decorations 
+    .gjs-sm-stack 
+        display: flex
+        justify-content: space-between
+        padding: 0px 10px !important
+    
+.gjs-sm-sector__extra
+    .gjs-sm-stack
+        display: flex
+        justify-content: space-between
+        width: 100%
+        padding: 0px 10px !important
+        .gjs-fields
+            width: 50%
+
+.gjs-color-main, .gjs-sm-stack #gjs-sm-add, .gjs-off-prv
+    color: var(--color-black-pure)
+    fill: var(--color-black-pure)
+
+.gjs-sm-property__transition , .gjs-sm-property__transform
+    .gjs-sm-stack #gjs-sm-add
+        top: 11px !important
+    
+.gjs-sm-property__opacity
+    input[type=range]
+        accent-color: #F55050 
+    input[type=range]::-moz-range-progress 
+        background: var(--color-black-pure) 
+    input[type=range]::-ms-fill-lower
+        background: var(--color-black-pure) 

@@ -1,0 +1,75 @@
+.remove-trigger-popup-body
+    max-width: 22.34rem
+    z-index: 1
+    padding: 0
+    margin: 0
+
+.remove-trigger-popup-header-container
+    display: flex
+    z-index: 1
+
+.remove-trigger-icons
+    display: flex
+    width: 100%
+    justify-content: space-between
+    align-items: center
+    padding: 0
+    margin: 0
+
+.remove-trigger-left-icon
+    position: relative
+
+.remove-trigger-background-pattern
+    position: absolute
+    top: -1.25rem
+    left: -1.25rem
+
+
+.remove-trigger-body-text
+    position: relative
+    color: var(  --color--black-normal)
+
+.remove-trigger-body-description
+    color: var(--color--black-light)
+
+.remove-trigger-submit-button
+    display: flex
+    width: 100%
+    justify-content: space-between
+    flex-direction: row
+    align-items: center
+    gap: 0rem
+    z-index: 99
+    gap:.75rem
+    
+.trigger-popup-cross
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+    cursor: pointer
+    margin-right: 1rem
+    margin-top: -1rem
+
+.trigger-hover-circle 
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    background-color: var(--color--white-off) 
+    border-radius: 50%
+    width: 2.25rem
+    height: 2.25rem
+    opacity: 0
+    transition: opacity 0.3s ease
+    z-index: -1
+.hover-icon
+    display: none
+
+.trigger-popup-cross:hover img.default-icon 
+    display: none
+
+.trigger-popup-cross:hover img.hover-icon 
+    display: block
+.trigger-popup-cross:hover .trigger-hover-circle
+    opacity:1

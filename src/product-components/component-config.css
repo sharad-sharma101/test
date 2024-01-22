@@ -1,0 +1,33 @@
+.form__body-group .Button,
+.List {
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  text-align: start;
+}
+
+.add__specification .Button,
+.form__button .Button,
+.pricing-widget__anchor .Button,
+.sub-header__right .Button {
+  width: 100%;
+}
+
+.EditableContent {
+  line-height: 1.4 !important;
+}
+.list-select .Button span {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 20.1462rem;
+  text-align: start;
+}
+.drop-down .List{
+  padding-bottom: 0.67rem !important;
+  gap: 0.67rem !important;
+} 
+
+.form__body-group .FieldGroup{
+  padding-bottom: 1.34rem !important;
+}

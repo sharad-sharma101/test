@@ -1,0 +1,57 @@
+[
+	{
+		"_id": "52CCF17B-32E7-4AC3-DA83-A8F274E4DEBA",
+		"name": "Product Recommendation",
+		"description": "Showing product section with the list of relevant products based on the past purchase history and customer type."
+	},
+	{
+		"_id": "989D8952-CD4A-C54C-9C28-8D3D84C79399",
+		"name": "Personalized Discount Coupon",
+		"description": "Enabling customer specific and limited time discount coupons based on the purchase life cycle of the customer (Show it to all first-time purchasers) "
+	},
+	{
+		"_id": "4F33C547-9720-121B-DB54-D35D3541924D",
+		"name": "Exit Intent Pop-up",
+		"description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+	},
+	{ "_id": "38EA207A-1062-96EB-CC77-F6D6B96423F8", "name": "Sign-up Pop-up", "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry." },
+	{ "_id": "27142582-DDB9-1379-0591-76933BD89E89", "name": "Survey Pop-up", "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry." },
+	{
+		"_id": "3E45ED28-4795-1F84-7FCC-C52346CCAF47",
+		"name": "Location based Pop-up",
+		"description": "Visitor from a different country "
+	},
+	{ "_id": "A794ADC8-458C-91E7-DCB4-28C057ABDD4E", "name": "Customer Chat", "description": "Enabling Customer Chat for specific customers " },
+	{
+		"_id": "3998985E-8AF6-41B1-2B2B-D5CC9A0A8EB4",
+		"name": "Customer Reviews",
+		"description": "Enabling Review Acceptance and Display"
+	},
+	{
+		"_id": "51548C91-92EA-1CE7-4DCB-571F71E3E22D",
+		"name": "UGC content with form",
+		"description": "Enabling UGC content in the form of disappearing banner – Disappear in x seconds "
+	},
+	{
+		"_id": "9836245E-6983-24DD-7962-4B67A5974CDD",
+		"name": "Complementary product",
+		"description": "Complementary product list after product Added to Cart "
+	},
+	{
+		"_id": "f5e3721e-3dd0-4ede-a2d7-5445f8e35372",
+		"name": "Product Comparison",
+		"description": "Product Comparison Section  - the one we see in Amazon/Sephora. These are products similar to what the customer is interested in. "
+	},
+	{ "_id": "A3FAD224-27D9-02C5-A2C8-477A67B5F9AC", "name": "Algo alteration", "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry." },
+	{
+		"_id": "A2229CBE-582B-1576-CB24-4DB9F865019A",
+		"name": "Personalized Search",
+		"description": "Providing personalized search based on the user params. This is on top of elastic search already enabled "
+	},
+	{ "_id": "D29F6282-5D2B-2AD7-76D3-4711EB5482C4", "name": "Page Variation", "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry." },
+	{
+		"_id": "716A81A3-D677-1ED2-636A-E6A9C579A055",
+		"name": "New Visitor Discount",
+		"description": "New Visitor Discount on Product Page"
+	}
+]

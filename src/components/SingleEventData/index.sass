@@ -1,0 +1,169 @@
+
+@mixin chevron-wrapper
+    width: 1.25rem
+    height: 1.25rem
+    img
+        width: 100%
+        height: 100%
+    
+.event-item-wrapper
+  display: flex
+  justify-content: space-between
+  align-items: center
+  height:2.5rem
+  cursor: pointer
+  padding: var(--padding-10) var(--padding-16)
+  &:hover
+    background: var(--color--primary-faint)
+    .session-title-heading
+      color: var(--color-primary-standard)
+    .event-chevron-right 
+      display: block
+.single-event-data-wrapper
+    display: flex
+    gap: 2.375rem
+
+.event-connector-dots-wrapper
+    position: relative
+
+.event-connector-dot
+    width: 0.5rem
+    position: absolute
+    height: 0.5064rem
+    border-radius: 3.125rem
+    left: -0.125rem
+    top: 0.25rem
+    background: var( --color-primary-faint-light)
+    z-index:3
+
+.event-connector-line
+    position: absolute
+    top: 0.3125rem
+    background: var(--color--primary-subdued)
+    width: 0.25rem
+    height:3.7rem
+    margin: auto
+   
+.session-timing-hms
+    color: var(--color--white-light)
+    width: 5.25rem
+
+.session-title-heading
+    color: var(--color--black-standard)
+
+.event-chevron-right
+    @include chevron-wrapper
+    display: none
+
+.event-chevron-right-active
+    @include chevron-wrapper
+    display: none
+
+.event-item-wrapper-selected
+  display: flex
+  justify-content: space-between
+  align-items:center
+  height:2.5rem
+  cursor: pointer
+  background: var(--color-primary-standard)  
+  padding: var(--padding-10) var(--padding-16)
+  .session-title-heading
+    color: var(--color-white-faint)
+  .event-chevron-right 
+    display: none
+  .event-chevron-right-active
+    display: block 
+  .session-timing-hms
+    color: var(--color-white-faint)
+
+
+
+.accordian-event-data-wrapper
+  display: flex
+  gap: 2.1875rem
+  height: 100%
+  padding: 0.6875rem 1.5rem 0.6875rem 0.875rem
+  cursor: pointer
+  align-items: center
+  width: 98%
+  &:hover
+    background: var(--color--primary-faint)
+    .heading-location-title
+      color: var(--color--primary-standard)
+
+
+.accordian-event-data-wrapper-child-2
+  display: flex
+  height: 100%
+  gap: 2.3125rem
+  width:100%
+  
+.dots-accordian-wrapper
+  position: relative
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  margin-top: 2px
+
+.event-accordian-connector-dot
+  position: absolute
+  top:2px
+  min-width: 0.5rem
+  min-height: 0.5064rem
+  background: #9E77ED
+  border-radius: 50%
+  z-index: 4
+
+
+
+
+
+.event-accordian-connector-line
+  position: absolute
+  min-height: 115%
+  min-width: 0.25rem
+  background: #E9D7FE
+  top:4px
+
+.event-accordian-connector-line-close
+  position: absolute
+  top:2px
+  min-width: 0.25rem
+  background: #E9D7FE
+  height: 3.7rem
+
+.chevron-icon-accordian-wrapper
+  width: 1.25rem
+  height: 1.25rem 
+  img
+    width: 100%
+    height: 100%
+
+.chevron-icon-accordian-wrapper-close
+  width: 1.25rem
+  height: 1.25rem
+  rotate: 180deg 
+  img
+    width: 100%
+    height: 100%
+  
+.accordian-data-location-items-wrapper-parent
+  width: 100%
+.location-specific-wrapper-accordion
+  display: flex
+  margin-left: 8.065rem
+  gap: 2.5rem
+  transition: 0.4s height
+
+
+.accordian-data-location-items-wrapper
+  display: flex
+  justify-content: space-between
+  align-items: center
+  p
+    color: var(--color--black-standard)
+
+.location-accordian-time-text
+  color: var(--color--white-light)
+  min-width: 5rem

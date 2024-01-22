@@ -1,0 +1,104 @@
+.review-page-container
+    width: 87.5rem
+
+.review-body--data
+    display: flex
+    flex-direction: column
+    gap: 2.25rem
+    border-radius: 0rem 0rem var(--border-radius-8) var(--border-radius-8)
+    background: var(--color-white-faint)
+    width: 100%
+    height: 100%
+    .segment-input-field
+        width: 100%
+        display: flex
+        gap: 1.5rem
+        .segment-name-container
+            display: flex
+            width: 26.62%
+            flex-direction: column
+            gap: 0.375rem
+            p
+                color: var(--color--black-standard)
+            input
+                display: flex
+                padding: var(--padding-10) var(--padding-14)
+                align-items: center
+                gap: 0.5rem
+                width: 100%
+                color: var(--color-light-gray)
+                border-radius: var(--border-radius-8)
+                border: 1px solid var(--color--white-dark)
+                background: var(--color-white-faint)  
+                &:focus-visible
+                    border: none
+                    outline: none
+                &:focus
+                    box-shadow: 0px 0px 0px 4px #F4EBFF, 0px 1px 2px 0px rgba(16, 24, 40, 0.05)
+                    color: var(--color--black-normal)
+        .segment-description-container
+            display: flex
+            width: 44.37%
+            flex-direction: column
+            gap: 0.375rem
+            p
+                color: var(--color--black-standard)
+            input
+                display: flex
+                padding: var(--padding-10) var(--padding-14)
+                gap: 0.5rem
+                width: 100%
+                color: var(--color-light-gray)
+                border-radius: var(--border-radius-8)
+                border: 1px solid var(--color--white-dark)
+                background: var(--color-white-faint)
+                &:focus-visible
+                    border: none
+                    outline: none  
+                &:focus
+                    box-shadow: 0px 0px 0px 4px #F4EBFF, 0px 1px 2px 0px rgba(16, 24, 40, 0.05)
+                    color: var(--color--black-normal)
+
+    .review-info-container
+        display: flex
+        flex-direction: column
+        .triggers-info--data
+            display: flex
+            gap: 7.5rem
+            .triggers-info-usecase, .triggers-info-segment, .triggers-info-pages, .triggers-info-frequency
+                display: flex
+                flex-direction: column
+                align-items: flex-start
+                gap: 0.25rem
+                flex: 1 0 0
+                .usecase-heading
+                    color: var(--color--black-standard)
+                .usecase-subheading
+                    color: var(--color--black-light)
+    
+    .review-triggers-container
+        box-sizing: border-box
+        width: 100%
+        display: flex
+        flex-direction: column
+        gap: 0.5rem
+        pointer-events: none
+    .review-triggers-container .triggers-body--data
+        padding-top: 0px
+
+.warning-variant-name-input
+    border: 2px solid var(--color-danger-dark) !important
+    animation: blink 1s infinite
+
+    &:focus
+        box-shadow: none
+
+@keyframes blink 
+  0% 
+    border-color: transparent
+  
+  50% 
+    border-color: var(--color-danger-dark)
+  
+  100% 
+    border-color: transparent

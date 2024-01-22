@@ -1,0 +1,17 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 0.25rem 0.25rem rgb(0 0 0 / 8%);
+  align-items: center;
+  height: 4rem;
+  padding: 1rem 1.5rem;
+  justify-content: center;
+}
+
+.navbar__brand {
+  font-size: 1.25rem;
+  line-height: 1rem;
+  font-weight: 400;
+  color: var(--color-white);
+}

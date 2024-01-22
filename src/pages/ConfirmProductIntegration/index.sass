@@ -1,0 +1,116 @@
+@use '../../styles/sass' as *
+    
+.confirm-product-integration-connect 
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+    position: fixed
+    z-index: 10
+    background-color: var(--color--white-off)
+    top: 0
+    left: 0
+    overflow: auto
+    height: 100vh
+    width: 100vw
+
+.confirm-product-integration-connect-container
+    position: absolute
+    max-width: 99rem
+    width: 100%
+    top: 9.31rem
+    display: flex
+    justify-content: center
+    align-items: center
+    padding-bottom: 12.9rem
+
+.attryb-logo__wrapper
+    position: absolute
+    top: 2rem
+    left: 2rem    
+    height: 2.3125rem    
+    width: 5.4375rem
+
+.attryb-logo__wrapper > img
+    width: 100% 
+    height: 100%
+ 
+.integration-connect__container
+    display: flex
+    flex-direction: column
+    justify-content: center
+    gap: 5rem 
+
+.integration-connect_header > h1
+    text-align: center
+    color: var(--color--black-normal)
+
+.integration-connect_header > h1 > span 
+   color: var(--color-primary-standard)
+
+.integration-connect__footer 
+    display: flex
+    flex-direction: column
+    gap: 5rem 
+
+.integration-connect__footer > .footer-headline > p 
+    text-align: center
+    color: var(--color--black-light)
+
+.connect-button__wrapper
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    gap: 2rem
+
+.connect-button__wrapper > p 
+    color: var(--color--black-light)
+
+.connect-button__wrapper > p > Link
+    color: var(--color--primary-standard)
+
+.connect-button__wrapper > .app-button 
+    width: 29rem
+
+.integration-connect__body 
+    display: flex 
+    align-items: center 
+    justify-content: center 
+    gap: 9.375rem
+
+.connecting-mail__wrapper 
+    display: flex
+    flex-direction: column
+    gap: 2rem
+    justify-content: center 
+    align-items: center 
+
+.shop_credential_container > p , .user-mail_container > p 
+    color: var(--color--black-light)
+
+.connect-icon_wrapper
+    width: 15rem
+    height: 15rem
+    display: flex
+    img
+        width: 100%
+        height: 100%
+
+.integration-connect-svg--wrapper
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    gap: 2.4615rem
+
+.integration-connect__body 
+    display: flex 
+    flex-direction: row 
+    gap: 12.3077rem
+
+@media only screen and (max-width: $breakpoint-tablet)
+    
+    .confirm-product-integration-connect 
+        padding-top: 5.5rem
+        overflow: auto

@@ -1,0 +1,71 @@
+.number-input-container
+    width: 5rem
+    height: 2.5rem
+    display: flex
+    align-items: center
+    padding: 0px
+    gap: 8px
+    background: var(--color-white-faint)
+    &:active
+        color: var(--color--black-normal)
+        
+.number-input-container > .number-component--input
+    width: 100%
+    height: 100%
+    display: flex
+    color: var(--color-light-gray)
+    text-align: center
+    border: none
+    align-items: center
+    gap: 8px
+    flex: 1 0 0
+    border-radius: var(--border-radius-4)
+    border: 1px solid var(--color-grey-light)
+    &:focus-visible
+        border: none
+        outline: none
+    &:focus
+        border-radius: var(--border-radius-4)
+        border: 1px solid var(--color-grey-light)
+
+.number-input-container    
+    .number-component--input.warning-input
+            border: unset
+            box-shadow: var(--color-danger-dark) 0px 1px 4px
+            border: 1px solid var(--color-danger-dark)
+
+
+.btns
+    display: none
+    padding: 2px 5.67px 1.67px 6px
+    align-items: center
+    flex-direction: column
+    justify-content: center
+    // gap: 8px
+    img
+        width: 0.9375rem
+        padding: 4px 0px
+
+
+
+/* Chrome, Safari, Edge, Opera */
+.number-input-container > .number-component--input::-webkit-outer-spin-button,
+.number-input-container > .number-component--input::-webkit-inner-spin-button
+  -webkit-appearance: none
+  margin: 0
+
+/* Firefox */
+.number-input-container > .number-component--input[type=number]
+  -moz-appearance: textfield
+
+.number-component--input:focus::-webkit-input-placeholder
+    color: transparent
+
+.number-component--input:focus:-moz-placeholder
+    color: transparent // For Firefox 4-18
+
+.number-component--input:focus::-moz-placeholder
+    color: transparent // For Firefox 19+
+
+.number-component--input:focus:-ms-input-placeholder
+    color: transparent // For IE 10+

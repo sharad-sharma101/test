@@ -1,0 +1,55 @@
+@use "../../styles/sass" as *
+
+.progress-container
+    @include flex(row, center, unset)
+    width: 100%
+    gap: 1.8462rem
+
+
+.progress
+    @include flex(row, center, space-between)
+    gap: .6154rem
+
+    .progress-step__prefix
+        width: 1.3846rem
+        height: 1.3846rem
+        background-color: $primary-standard
+        color: $light-standard
+        @include flex(row, center, center)
+        border-radius: 50%
+        font-size: .9231rem
+        line-height: 1
+        font-weight: lighter
+        transition: background-color 500ms
+
+    .progress-step__prefix.active
+        background-color: $primary-standard
+
+    .progress-step__prefix.completed
+        background-color: $secondary-standard
+
+    .progress-step__prefix.pending
+        background-color: $border-stardard-light
+
+    .progress-step__body
+        font-size: .9231rem
+        line-height: 1
+        font-weight: 400
+
+.progress-step.--last-step
+    flex: 0
+
+.progress-step
+    @include flex(row, center, space-between)
+    flex: 1
+    gap: .6154rem
+
+    .progress-step__bar
+        width: 100%
+        height: 0
+        border: 1px solid $border-standard
+        transition: border-color 450ms
+
+    .progress-step__bar.completed
+        border-color: $secondary-standard
+

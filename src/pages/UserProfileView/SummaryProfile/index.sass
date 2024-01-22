@@ -1,0 +1,101 @@
+
+.kpi-card-wrapper 
+    display: flex
+    flex-wrap: wrap
+    gap: 1rem
+    margin-bottom: 1.5rem
+
+.product-detail-header
+    display: flex
+    width: 100%
+
+    .header-element 
+        flex: 1 
+
+.product-detail-row 
+    display: flex
+    width: 100%
+
+    .product-element 
+        flex: 1
+    
+.product-detail-rows
+    width: 100%
+
+.accordion-wrapper 
+    border: 1px solid var(--color--white-dark)
+    display: flex
+    width: 100%
+    flex-direction: column
+    align-items: flex-start
+    border-radius: var(--border-radius-8)
+    margin-bottom: 1.5rem
+
+    .container-header
+        display: flex
+        padding: var(--padding-12) var(--padding-24)
+        justify-content: space-between
+        align-items: flex-start
+        align-self: stretch
+        cursor: pointer
+        border-bottom: 1px solid var(--color--white-dark)
+        background: var(--color--white-off)
+        border-top-left-radius: var(--border-radius-8)
+        border-top-right-radius: var(--border-radius-8)
+
+        .chavron-image-wrapper
+            height: 1.25rem
+            width: 1.25rem
+            img
+                height: 100% 
+                width: 100%
+    
+.traffic-source-row
+    display: flex
+    align-items: flex-start
+    align-self: stretch
+    padding: var(--padding-12) var(--padding-24) 
+    border-bottom: 1px solid var(--color--white-dark)
+    width: 100% 
+
+    .row-value-data 
+        flex: 1
+    
+.traffic-data-rows-wrapper
+    width: 100% 
+    transition: height 1s
+
+.traffic-data-rows-wrapper.open 
+    display: block
+    height: 100%
+.traffic-data-rows-wrapper.close
+    display: none
+    height: 0px
+
+.traffic-source-row
+    &:last-child 
+        border-bottom: none !important
+
+
+.summary-location-data-wrapper
+    padding: var(--padding-16) var(--padding-24) 0 var(--padding-24)
+
+.product-detail-header , .product-detail-row
+    padding: var(--padding-12) var(--padding-24)
+
+.header-element
+    &:first-child
+        flex: 33%
+    
+.product-element
+    &:first-child
+        flex: 33% !important
+    
+.header-element
+    &:not(:first-child) 
+        text-align: center
+    
+.product-element
+    &:not(:first-child) 
+        text-align: center
+        

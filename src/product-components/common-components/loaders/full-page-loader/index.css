@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+.loading__screen__main__container {
+  width: 100vw;
+  height: 100vh;
+
+  background-color: var(--color-grey-1);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading__screen__main__container-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.loading__screen__main__container-box .loading__screen-box--text {
+  font-family: "Inter", sans-serif;
+
+  font-weight: normal;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  color: var(--color-grey-4);
+
+  margin-top: 0.7188rem;
+}
+
+.loading__screen-box--animation-div {
+  font-family: "Inter", sans-serif;
+  height: 2.125rem;
+  width: 2.125rem;
+  border-radius: 50%;
+  border: 3.5px solid transparent;
+  animation: spin 1s linear infinite;
+
+  background: linear-gradient(var(--color-grey-1), var(--color-grey-1)),
+    conic-gradient(from 0.78turn, #d8f0f4, var(--color-primary-normal));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}

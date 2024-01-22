@@ -1,0 +1,23 @@
+.product_input-group {
+	display: flex;
+	gap: 0.5rem;
+	background-color: #f5f6f7;
+}
+.product_input-group input {
+	width: -webkit-fill-available;
+}
+
+.input-group-button {
+	width: 3.0769rem;
+	height: 100%;
+	border-radius: 4px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	/* border-top: .0769rem solid;
+  border-right: .0769rem solid;
+  border-bottom: .0769rem solid; */
+	border: 1px solid var(--color-black-subdued);
+	padding: 8px;
+}

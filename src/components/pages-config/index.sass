@@ -1,0 +1,17 @@
+@use '../../styles/sass' as *
+    
+.page-field__container
+    @include flex(column, center, start)
+    gap: 1rem
+    position: relative
+    border: 1px solid var(--color-black-dark)
+    padding: var(--padding-48) var(--padding-16)
+
+.page-CheckBox__wrapper
+    position: absolute
+    top: 0.5rem  
+    cursor: pointer     
+    left: 1rem
+
+.page-CheckBox__wrapper > input 
+      transform: scale(2)

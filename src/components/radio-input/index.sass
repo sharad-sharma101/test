@@ -1,0 +1,54 @@
+
+.radio-container-row
+    display: flex
+    flex-direction: row
+    justify-content: flex-start
+    align-items: flex-start
+    padding: var(--padding-8) 0rem
+    gap: .75rem
+
+.radio-input-circle-wrapper
+    height: 1.5rem
+    display: flex
+    align-items: center
+    justify-content: center
+
+.radio-input-circle
+    height: 1.25rem
+    width: 1.25rem
+    flex-shrink: 0
+    accent-color: var(--color--primary-frontend)
+    border-radius: 50%
+    transition: border-color 0.3s ease
+    pointer-events: none
+    position: relative
+    background-color: white
+    border: 2px solid var(--color--primary-frontend)
+    &::before 
+        appearance: none
+        content: ""
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%) scale(1)
+        width: 0.6rem
+        height: 0.6rem
+        background-color: var(--color--primary-frontend)
+        border-radius: 50%
+        transition: transform 0.3s ease
+        opacity: 0
+        &:checked 
+            &::before 
+                transform: translate(-50%, -50%) scale(0.01)
+                opacity: 1
+            &:hover:not(:checked) 
+                border: 2px solid var(--color--primary-frontend) 
+                background-color: var(--color--primary-frontend)
+.radio-option-content
+    display: flex
+    flex-direction: column 
+
+.radio-option-description
+    color: var( --color--black-light)
+.radio-option-label
+    color: var( --color--dark-black)

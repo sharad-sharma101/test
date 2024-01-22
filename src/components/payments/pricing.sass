@@ -1,0 +1,121 @@
+@use '../../styles/sass' as * 
+
+
+.pricing-popup--header
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    position: relative
+    gap: 2.5rem
+    padding-top: var(--padding-32)
+    padding-bottom: var(--paddin-16)
+
+.pricing-plans-popup--wrapper > .popup-wrapper > .ModalWrapper > .Backdrop > .AlertPopup 
+    background: url("../../assets/images/pricing-popup-background.svg")
+    background-color: var(--color--primary-faint)
+    width: 100vw 
+    height: 100vh
+    border-radius: 0rem 
+    -webkit-background-size: cover
+    -moz-background-size: cover
+    -o-background-size: cover
+    background-size: cover
+    overflow: scroll
+
+.header-heading--container
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    gap: .75rem
+
+.heading-badge-wrapper
+    display: flex
+    flex-direction: row
+    align-items: center
+    padding: var(--padding-4) var(--padding-12)
+    background: var(--color--primary-faint)
+    mix-blend-mode: multiply
+    border: 1px solid var(--color--primary-subdued)
+    border-radius: var(--border-radius-16)
+
+.heading-badge-wrapper > p 
+    text-align: center
+    color: var(--color--primary-standard)
+
+.pricing-heading-wrapper > h1 
+    text-align: center
+    color: var(--color--primary-dark)
+
+.supporting-text-wrapper > h2
+    text-align: center
+    color: var(--color--primary-standard)
+
+.toggle--wrapper
+    display: flex 
+    justify-content: center
+    gap: .5rem
+
+.toggle--wrapper > p 
+    text-align: center
+    color: var(--color--primary-standard)
+
+.pricing-cards--wrapper
+    display: flex
+    padding-bottom: 0rem
+    flex-wrap: wrap
+    gap: 2rem
+    justify-content: center
+    align-items: center
+
+.cross-image--wrapper 
+    position: absolute
+    display: flex
+    top: 0rem
+    right: 0rem
+    cursor: pointer
+    width: 5.75rem
+    height: 5.75rem
+    justify-content: center
+    align-items: center
+    border-radius: 1.0455rem
+
+.default-image , .hover-image
+    display: flex
+    justify-content: center
+    align-items: center
+
+.default-image , .hover-image
+    width: 1.5rem              
+    height: 1.5rem                   
+
+.default-image > img , .hover-image >img 
+    width: 100%
+    height: 100%
+
+.cross-image--wrapper > .default-image
+    display: block
+
+.cross-image--wrapper > .hover-image
+    display: none
+
+.cross-image--wrapper:hover 
+    background: var(--color-primary-standard)
+
+.cross-image--wrapper:hover  > .default-image 
+    display: none
+
+.cross-image--wrapper:hover  > .hover-image
+    display: block
+
+.toggle-pricing-period > .toggle--wrapper > .Switch > .SwitchToggle
+    background: var(--color-primary-standard)
+
+@media only screen and (max-width: $breakpoint-tablet)
+    .pricing-popup--header
+        padding-top: var(--padding-4)
+
+@media only screen and (max-width: $breakpoint-mobile)
+    .pricing-popup--header
+        padding-top: var(--padding-4)

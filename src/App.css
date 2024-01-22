@@ -1,0 +1,48 @@
+.App{
+    height: 100vh;
+}
+
+.app-heading{
+    font-size: 2.4615rem;
+    line-height: 3.0769rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+.mg-b-standard{
+    margin-bottom: 1rem;
+}
+
+.App__block{
+    display: flex;
+}
+.page-screen{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+}
+
+.navigate-button {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: var(--padding-24);
+}
+.configuration-container-main {
+    height: 100%;
+    overflow: scroll;
+}
+.proceed-container {
+    display: flex;
+
+    gap: .5rem;
+}
+
+.List .list-container {
+    background-color: var(--color-white-faint) !important;
+}

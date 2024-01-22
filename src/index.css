@@ -1,0 +1,16 @@
+
+*::-webkit-scrollbar-thumb{
+    border-radius: .1875rem;  
+    background: var(--color--white-dark);
+}
+*::-webkit-scrollbar{
+    display: block;
+    width: 0.3rem; 
+}
+*::-moz-scrollbar {
+    width: 0.3rem;
+}
+*::-moz-scrollbar-thumb{
+    border-radius: .1875rem;  
+    background: var(--color--white-dark);
+}

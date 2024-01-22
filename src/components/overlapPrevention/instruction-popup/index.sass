@@ -1,0 +1,99 @@
+.sidepopup_wrapper
+
+    .overlay 
+        opacity: 0.7
+        background: var(--color--dark-black)
+        height: 100vh
+        width: 100vw
+        top: 0
+        left: 0
+        position: fixed
+        z-index: 11
+
+    .right-side-instruction-section
+        padding: var(--padding-48) var(--padding-64)
+        position: fixed !important
+        top: 0
+        right: 0
+        display: flex
+        flex-direction: column
+        justify-content: flex-start
+        align-content: center
+        gap: 2rem
+        background: #fff
+        width: 60rem
+        z-index: 11
+        height: 100vh
+        position: relative
+        animation: 0.5s ease-in-out alternate swingViewport
+
+        .popup-cross-wrapper 
+            position: absolute
+            padding: var(--padding-8)
+            min-width: 1.75rem
+            min-height: 1.75rem            
+            right: 1.75rem
+            top: 1.75rem
+            cursor: pointer
+            border-radius: 2.75rem
+
+            &:hover 
+                background: var(--color-grey-faint)
+
+            img
+                height: 100% 
+                width: 100%
+
+        .heading-section 
+            width: 100% 
+
+        .description-option 
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-content: center
+            gap: 40px
+
+            .card-of-description 
+                display: flex
+                gap: 1.125rem
+
+                .radio-input-wrapper
+                    display: flex
+                    padding-top: var(--padding-2)
+                    justify-content: center
+                    align-items: center
+
+                    .radio-input-circle
+                        height: 1.25rem
+                        width: 1.25rem
+                        flex-shrink: 0
+                        accent-color: var(--color--primary-frontend)
+
+                .radio-input-content
+                    display: flex
+                    flex-direction: column
+                    align-items: flex-start
+                    flex: 1 0 0
+
+                    .radio-input-heading
+                        color: var(--color-light-gray)
+                    .radio-input-subheading
+                        color: var(--color-light-gray)
+
+                .middle-section-text
+                    display: flex
+                    justify-content: flex-start
+                    flex-direction: column
+                    align-items: center
+                    gap: .5rem
+
+                .right-side-gif-wrapper
+                    min-width: 14.4792rem
+                    height: 8.75rem
+                
+@keyframes swingViewport 
+  from 
+    transform: translateX(100%)
+  to 
+    transform: translateX(0%)

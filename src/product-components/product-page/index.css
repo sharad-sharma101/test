@@ -1,0 +1,92 @@
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scrollbar__hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrollbar__hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.button {
+  border: none;
+  background: none;
+}
+
+.feedback_alert {
+  position: absolute;
+  top: 4.2rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  font-size: 2rem;
+  color: var(--color-white);
+  background-color: rgb(1 183 130);
+  width: 18.75rem;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.feedback_alert > h1 {
+  font-size: 1.5rem;
+}
+
+
+.Switch .SwitchToggle .SwitchToggleBtn {
+  background-color: var(--color-white-faint);
+  border-radius: 200rem;
+  box-shadow: 0.08rem 0.17rem 0.25rem rgb(0 0 0 / 7%);
+  height: var(--switch-btn-diam);
+  width: var(--switch-btn-diam);
+  transform: translate3d(0px, 0px, 0px) !important;
+}
+
+.Switch .SwitchToggle {
+  align-items: center;
+  border-radius: 100rem;
+  cursor: pointer;
+  display: flex;
+  height: var(--switch-height);
+  padding: var(--switch-padding);
+  transition: all 0.2s ease-in-out;
+  width: var(--switch-width);
+  transform: translate3d(0px, 0px, 0px) !important;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.form__body-group .Button,
+.List {
+  width: 100% !important;
+  justify-content: space-between;
+  display: flex;
+  text-align: start;
+}
+
+.add__specification .Button,
+.form__button .Button,
+.pricing-widget__anchor .Button,
+.sub-header__right .Button {
+  width: 100%;
+}
+
+.EditableContent {
+  line-height: 1.4 !important;
+}
+.list-select .Button span {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 20.1462rem;
+  text-align: start;
+}
+
+@media screen and (max-width: 768px) {
+  .display--block {
+    display: block;
+  }
+}

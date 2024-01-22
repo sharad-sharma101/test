@@ -1,0 +1,52 @@
+.header-of-accordion--wrapper
+    display: flex
+    justify-content: space-between
+    padding: var(--padding-20) var(--padding-24)
+    width: 100%
+    align-items: center
+    border-top: 1px solid var(--color--white-dark)
+    border-top-left-radius: var(--border-radius-12)
+    border-top-right-radius: var(--border-radius-12)
+
+.heading-of-accordion-sub-heading--wrapper
+    display: flex
+    gap: 0.75rem
+    align-items: center
+
+.heading-of-accordion-sub-heading--wrapper > p
+    color: var(--color-black-normal)
+
+.accordion-caret--wrapper
+    display: flex
+    gap: 1.5rem
+
+.accordion-caret--wrapper > p
+    color: var(--color-primary-standard)
+
+.accordion-caret--toggle
+    position: relative
+    cursor: pointer
+    transition: transform 0.3s ease
+
+.accordion-caret--toggle > img 
+  transition: transform 0.3s ease
+
+.accordion-caret--toggle.expanded > img
+    transform: scaleY(-1)
+
+
+.accordion-content--wrapper
+    height: 0
+    transition: all 0.3s ease
+    overflow: hidden
+    width: 100%
+    opacity: 0
+    
+.accordion-content--wrapper.open
+    height: auto
+    opacity: 1
+
+.heading-of-accordion-sub-heading--img
+    img
+        height: 100%
+        width: 100%

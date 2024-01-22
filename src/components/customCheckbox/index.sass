@@ -1,0 +1,42 @@
+.custom-checkbox-container
+  width: 1rem
+  height: 1rem
+  position: relative
+
+/* Hide elements visually without using clip */
+.audience-table-wrapper
+  tbody
+    td:first-child
+      cursor: default
+
+.custom-checkbox
+  position: absolute
+  opacity: 0
+  width: 1rem
+  height: 1rem
+  overflow: hidden
+  z-index: 100
+  cursor: pointer
+
+
+
+/* Add a :before to each label and style this as the checkbox you want to have */
+.custom-checkbox-label
+  width: 1rem
+  height: 1rem
+  border-radius: 0.25rem
+  border: 1px solid var(--color-grey-light)
+  background: var(--color--main-white)
+  display: inline-block
+
+/* Change the styling of the :before when the hidden checkbox is checked, you can also add a background-image */
+input[type="checkbox"]:checked ~ .custom-checkbox-label
+  border-radius: 0.25rem
+  background: var(--color--primary-faint) no-repeat center
+  border: 1px solid var(--color--primary-frontend)
+  background-size: 0.875rem 0.8125rem
+  z-index: 1000
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxMiAxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgaWQ9ImNoZWNrIj4KPHBhdGggaWQ9Ikljb24iIGQ9Ik0xMCAzTDQuNSA4LjVMMiA2IiBzdHJva2U9IiM3RjU2RDkiIHN0cm9rZS13aWR0aD0iMS42NjY2IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9nPgo8L3N2Zz4K')
+
+input[data-varient="dashed"]:checked ~ .custom-checkbox-label
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxMiAxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgaWQ9Im1pbnVzIj4KPHBhdGggaWQ9Ikljb24iIGQ9Ik0yLjUgNkg5LjUiIHN0cm9rZT0iIzdGNTZEOSIgc3Ryb2tlLXdpZHRoPSIxLjY2NjY2IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9nPgo8L3N2Zz4K") !important

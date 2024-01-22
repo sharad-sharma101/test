@@ -1,0 +1,51 @@
+:root {
+  /* primary  */
+  --color-primary-normal: #6e40ff;
+  --color-primary-light: #e8e0ff;
+  /*  */
+  --color-primary-normal-alpha: rgba(110, 64, 255, 0.16);
+  --color-primary-light-alpha: rgba(232, 224, 255, 0.24);
+  /* secondary */
+  --color-secondary-normal: #109c72;
+  --color-secondary-light: #d9efe8;
+
+  /* grayscale */
+  --color-dark-normal: #172b4d;
+  --color-grey-4: #6b788d;
+  --color-grey-3: #a2aab8;
+  --color-grey-2: #dadde2;
+  --color-grey-1: #edeef1;
+
+  /* blacks */
+  --color-black-normal: #201f20;
+  --color-black-deep: #0e0d0e;
+
+  /* whites */
+  --color-white: #ffffff;
+  --color-white-alpha-80: rgba(255, 255, 255, 0.8);
+  --color-white-alpha-60: rgba(255, 255, 255, 0.6);
+  --color-white-alpha-40: rgba(255, 255, 255, 0.4);
+
+  --color-white-off: #f8f9fa;
+
+  /* alerts */
+  --color-success-font: #006100;
+  --color-success-bg: #c6efce;
+  --color-danger-font: #9c0006;
+  --color-danger-bg: #ffc7ce;
+  --color-warning-bg: #9c5700;
+  --color-warning-font: #ffeb9c;
+  --color-info-font: #001e62;
+  --color-info-bg: #c6caf0;
+
+  /* common styles */
+  --light-neutral: #f4f5f7;
+  --color-grey-5: #6b778c;
+  --target-ads-primary-color: #0d3cfe;
+  --space-xs: 0.333rem; /* 4px */
+  --space-s: 0.667rem; /* 8px */
+  --space-base: 1rem; /* 12px */
+  --space-l: 1.333rem; /* 16px */
+  --space-xl: 1.667rem; /* 20px */
+  --space-xxl: 2rem; /* 24px */
+}

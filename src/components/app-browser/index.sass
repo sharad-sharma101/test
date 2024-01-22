@@ -1,0 +1,85 @@
+@use '../../styles/sass' as *
+
+.container-main
+    width: 100%
+    height: auto
+    // margin-top: 3.125rem
+    position: relative
+    border-top-left-radius: 10px
+    border-top-right-radius: 10px
+
+    box-shadow: 0px 4px 6px 0px rgba(23, 43, 77, 0.16)
+
+
+// .app-browser, #app-browser-frame
+//     height: 100%
+//     width: 100%
+//     background: $light-faint
+
+// .app-browser-viewport, .iframe-loader-container
+//     width: 100%
+//     height: 100%
+    // background: url('../../assets/images/iframe-loading.svg') center center no-repeat
+
+.app-browser
+    height: 100%
+    width: 100%
+
+.app-browser-viewport
+    height: 100%
+    width: 100%
+    background-color: $light-faint
+    border:1px solid $border-stardard-light
+
+    @include flex(row, stretch, start)
+
+    .frame-container
+        height: 100%
+        width: 100%
+        //padding: 1.25rem
+        overflow: hidden
+        @include flex(row, center, center)
+        background-color: $light-background
+
+        iframe
+            height: 100%
+            width: 100%
+            overflow: scroll
+            border: none
+            box-shadow: 0px 1px 2px 0px rgba(23, 43, 77, 0.16)
+            transition: width 0.25s
+           
+
+#app-browser-frame
+    position: relative
+
+.settings-panel-container
+    width: 0
+    opacity: 0
+    transition: all 0.25s
+    position: absolute
+    top: 0
+    visibility: hidden
+    -ms-overflow-style: none
+    scrollbar-width: none
+
+.settings-panel-container.-display-panel
+    opacity: 1
+    height: 100%
+    overflow: scroll
+    visibility: visible
+    width: 25%
+
+.settings-panel-container::-webkit-scrollbar 
+    display: none
+
+
+.iframe.desktop
+    width: 100% !important
+    
+
+.iframe.tablet
+    width: 48rem !important
+
+.iframe.mobile
+    width: 22.3125rem !important

@@ -1,0 +1,91 @@
+.alert-feedback {
+  height: 2.7rem;
+  color: var(--color-dark-normal);
+  padding: var(--space-s) 1rem;
+  border: 0.0625rem solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: fit-content;
+  top: 4.4rem;
+  left: 0;
+  right: 0;
+  position: fixed;
+  margin: 0 auto !important;
+  z-index: 3;
+  box-shadow: 0 1.5rem 1.5rem -0.5rem rgb(23 43 77 / 24%);
+  border-radius: 0.25rem;
+}
+.alert-feedback--action-min-h {
+  min-height: calc(2 * var(--space-xxl));
+}
+.alert-feedback__left,
+.alert-feedback__right,
+.alert-feedback__prefix,
+.alert-feedback__suffix {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.alert-feedback__prefix,
+.alert-feedback__suffix {
+  width: 1.875rem;
+}
+.alert-feedback.alert-feedback--success {
+  background-color: var(--color-success-bg);
+  border-color: var(--color-success-bg);
+  color: var(--color-success-font);
+}
+
+.alert-feedback.alert-feedback--danger {
+  background-color: var(--color-danger-bg);
+  border-color: var(--color-danger-bg);
+  color: var(--color-danger-font);
+}
+
+.alert-feedback.alert-feedback--warning {
+  background-color: var(--color-warning-font);
+  border-color: var(--color-warning-font);
+  color: var(--color-warning-bg);
+}
+.alert-feedback__suffix {
+  margin-left: 1rem;
+  cursor: pointer;
+}
+.alert-feedback__prefix img {
+  width: var(--space-l);
+}
+.alert-feedback__text {
+  font-size: 1rem;
+  margin-left: var(--space-s);
+}
+.alert-feedback__action {
+  display: flex;
+  white-space: nowrap;
+  font-weight: 500;
+  font-size: var(--space-base);
+  line-height: var(--space-l);
+  margin-left: calc(2 * var(--space-xxl));
+}
+.alert-feedback__action--pandding-s {
+  padding: var(--space-s) var(--space-base);
+}
+.alert-feedback.alert-feedback--success .btn.btn-secondary {
+  background: var(--color-success-bg);
+  border-color: var(--color-success-font);
+  color: var(--color-success-font);
+}
+
+.alert-feedback.alert-feedback--warning .btn.btn-secondary {
+  background: var(--color-warning-bg);
+  border-color: var(--color-warning-font);
+  color: var(--color-warning-font);
+}
+
+.alert-feedback.alert-feedback--danger .btn.btn-secondary {
+  background: var(--color-danger-bg);
+  border-color: var(--color-danger-font);
+  color: var(--color-danger-font);
+}

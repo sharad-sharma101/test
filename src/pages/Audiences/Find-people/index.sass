@@ -1,0 +1,75 @@
+@use '../../../styles/sass' as * 
+    
+
+.audiences-container 
+    background: var(--color--white-faint)
+    display: flex
+    overflow: auto
+    flex: 1
+    flex-direction: column
+    align-items: center
+    padding: 0 var(--padding-96)
+
+    thead
+        th:first-child
+            max-width: 2rem
+    tbody
+        .checkbox-wrapper
+            display: flex
+            justify-content: center
+            align-items: center
+            width: fit-content
+
+.audiences-heading-wrapper
+    display: flex
+    padding: var(--padding-12) 0
+    width: 100%
+    justify-content: space-between
+    align-items: center
+
+.audiences-right-buttons
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    gap: .75rem
+
+.usercount-filter
+    display: flex
+    justify-content: space-between
+    margin: 1rem 0rem
+
+    .usercount-text
+        @include flex(row,flex-end,unset)
+
+        span
+            color: var(--color-primary-standard)
+            margin-right: 0.25rem
+            text-align: center
+.audiences-container
+    .create-campaign-popup-body
+        padding-bottom: unset
+
+.default-plus-img
+    display: block
+.on-hover-plus-img
+    display: none
+
+
+.table-users-header-wrapper-parent
+    display: flex
+    justify-content: space-between
+.filter-close-img
+    width: 1.25rem
+    height: 1.25rem
+    img
+        width: 100%
+        height: 100%
+
+.filter-button-wrapper-item
+     width: fit-content
+     &:hover
+        .on-hover-plus-img
+            display: block
+        .default-plus-img
+            display: none

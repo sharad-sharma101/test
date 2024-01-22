@@ -1,0 +1,42 @@
+@mixin all-events-wrapper()
+    display: flex
+    flex-direction: column
+    margin-left: 3.5rem
+    gap: 1rem
+    margin-left:1.25rem
+    transition: 0.5s all
+    margin: 1rem 0rem 1rem 1.25rem
+    
+.all-events-list-wrapper
+    @include all-events-wrapper
+.all-events-list-wrapper-no-margin
+    @include all-events-wrapper
+    margin-bottom: 1rem 
+
+.chevron-dropdown-event
+    width: 1.25rem
+    min-width: 1.25rem
+    height: 1.25rem
+    img
+        height: 100%
+        width: 100%
+
+
+.chevron-dropdown-event-close
+    width: 1.25rem
+    min-width: 1.25rem
+    height: 1.25rem
+    img
+        rotate: 180deg
+        height: 100%
+        width: 100%
+    
+
+.all-events-list-wrapper div:last-child
+    // margin-bottom:2.5rem
+
+.event-time-line-header + div
+    margin-top:2rem
+
+
+

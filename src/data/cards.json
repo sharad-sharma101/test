@@ -1,0 +1,32 @@
+[
+    {
+      "header": "Assisted Revenue",
+      "numbers": "$ 5,033",
+      "statistic": "14.6%",
+      "context": "vs last month",
+      "graph": "assistedRevenue"
+    },
+    {
+      "header": "Average Order Value",
+      "numbers": "$ 99",
+      "statistic": "3.3%",
+      "context": "Due to Assistance",
+      "graph": "averageOrderValue"
+    },
+    {
+      "header": "Conversion Rate",
+      "numbers": "0.71%",
+      "statistic": "7.1%",
+      "context": "vs last month",
+      "graph": "conversionRate"
+    },
+    {
+      "header": "Conversions",
+      "numbers": "63",
+      "statistic": "16.4%",
+      "context": "Due to Assistance",
+      "graph": "conversion"
+
+    }
+  ]
+  

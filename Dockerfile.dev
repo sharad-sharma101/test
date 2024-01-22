@@ -1,0 +1,43 @@
+FROM node:18-alpine as builder
+# Set the working directory to /app inside the container
+WORKDIR /app
+# Copy app files
+COPY . .
+# Install dependencies (npm ci makes sure the exact versions in the lockfile gets installed)
+RUN npm install
+# Build the app
+ENV NODE_OPTIONS=--max_old_space_size=4096
+RUN VITE_AWS_REGION=us-east-1 \
+	VITE_USER_POOLID=us-east-1_NiaxGm2wp \
+	VITE_USER_POOL_WEB_CLIENTID=2f5dphndolfvql06afs7fgric1 \
+	VITE_OAUTH_DOMAIN=attryb.auth.us-east-1.amazoncognito.com \
+	VITE_OAUTH_REDIRECT_SIGNIN=https://dev.accounts.attryb.com/ \
+	VITE_OAUTH_REDIRECT_SIGNOUT=https://dev.accounts.attryb.com/?product=personalization \
+	VITE_SERVER_BASE_URL=https://dev.ua.attryb.com \
+	VITE_PROXY_SERVER_BASE_URL=https://dev.pps.attryb.com \
+	VITE_STATIC_PAGES_URL=https://beta.attryb.com \
+	VITE_AUTH_URL=https://dev.accounts.attryb.com \
+	VITE_PRODUCT_PAGE_BASE_URL=https://dev.contentapi.attryb.com/product \
+	VITE_CLIENT_BASE_URL=https://dev.personalization.attryb.com \
+	VITE_AUTH_ACCESS_TOKEN=482B4D6251655468566D597133743677397A24432646294A404E635266556A58 \
+	VITE_CONTENT_STUDIO_URL=https://dev.contentstudio.attryb.com \
+	VITE_CONTENT_STUDIO_API_URL=https://dev.cs.attryb.com \
+	VITE_ATTRYB_BASE_URL=https://beta.attryb.com \
+	VITE_AUTH_DOMAIN=.attryb.com \
+	VITE_PAYMENT_BASE_URL=https://dev.paymentsapi.attryb.com \
+	VITE_SHOPIFY_APP_URL=https://brought-bo-allied-explanation.trycloudflare.com?shop=attryb-test-store.myshopify.com&host=YXR0cnliLXRlc3Qtc3RvcmUubXlzaG9waWZ5LmNvbS9hZG1pbg \
+	VITE_PRODUCT_ID=942338b7-7d33-11ed-9f3b-00155d3e8ac7 \
+	VITE_VELOCITY_BASE_URL=https://velocity-ten.vercel.app \
+
+	npm run start:prod
+
+# Bundle static assets with nginx
+FROM nginx:1.23.3-alpine as production
+# Copy built assets from `builder` image
+COPY --from=builder /app/dist /usr/share/nginx/html
+# Add your nginx.conf
+COPY .nginx/nginx.dev.conf /etc/nginx/conf.d/
+# Expose port
+EXPOSE 80
+# Start nginx
+CMD ["nginx", "-g", "daemon off;"]

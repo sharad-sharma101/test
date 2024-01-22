@@ -1,0 +1,73 @@
+.schedule-page-container
+    width: 87.5rem
+
+    .schedule-setting-container
+        width: 100%
+        height: 100%
+        .schedule-data-wrapper
+            display: flex
+            width: 58.68%
+            flex-direction: column
+            gap: 2.5rem
+            // background-color: var(--color-white-normal)
+
+            .schedule-date-container
+                width: 100%
+                gap: 6rem
+                display: flex
+                align-items: flex-start
+                .start-date-container, .end-date-container
+                    display: flex
+                    align-items: flex-end
+                    gap: 0.75rem
+                    .schedule-start-date, .schedule-start-time, .schedule-end-date, .schedule-end-time
+                        display: flex
+                        flex-direction: column
+                        align-items: flex-start
+                        gap: 0.375rem
+                    .no-end-time
+                        pointer-events: none
+                        opacity: 0.5
+            .advance-setting
+                width: 100%
+                display: flex
+                flex-direction: column
+                justify-content: flex-start
+                gap: 2rem
+                .advanced-setting-body
+                    display: flex
+                    flex-direction: column
+                    gap: 1rem
+                    .advanced-setting-heading
+                        color: var(--color--black-normal)
+                    .advanced-setting-days
+                        display: flex
+                        align-items: flex-start
+                        gap: 24px
+                .advanced-setting-time
+                    display: flex
+                    align-items: flex-start
+                    gap: 40px
+                    .advanced-start-date
+                        display: flex
+                        flex-direction: column
+                        align-items: flex-start
+                        gap: 6px
+                    .advanced-end-date
+                        display: flex
+                        flex-direction: column
+                        align-items: flex-start
+                        gap: 6px
+                .advanced-setting-btn
+                    width: fit-content
+                    display: flex
+                    padding: 10px 16px
+                    justify-content: center
+                    align-items: center
+                    gap: 8px
+                    // cursor: pointer
+                    cursor: not-allowed
+                    opacity: 0.5
+
+                    .btn-text
+                        color: var(--color--black-light)

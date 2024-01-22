@@ -1,0 +1,73 @@
+@use '../../styles/sass' as *
+
+.button
+    padding: .5rem .75rem
+    font-style: normal
+    font-size: 1.125rem
+    font-weight: 500
+    line-height: 1.5rem
+    color: $light-faint
+    border: none
+    cursor: pointer
+    transition: 0.6s
+    @include flex(row, center, center)
+    border-radius: .25rem
+    
+    .button-prefix-icon
+        width: 1.5rem
+        height: 1.5rem
+
+        img
+            width: 100%
+            height: 100%
+
+
+.button.disabled
+    pointer-events: none
+    opacity: 0.5
+
+
+.button.active
+    pointer-events: auto
+    opacity: 1
+
+
+.button.primary-button
+    background: $primary-standard
+    width: 100%
+
+    &:hover
+        background-color: $dark-standard
+
+
+.button.secondary-button
+    background:$dark-secondary
+    color: $light-faint
+    width: 100%
+
+    &:hover
+        background-color:$light-faint
+        color: $dark-secondary
+
+.button.primary-outline
+    background:$light-faint
+    color: $primary-standard
+    border: 1px solid $primary-standard
+
+    &:hover
+        background:$primary-standard
+        color: $light-faint
+
+.button.outline
+    border: 1px solid #ebecf0
+
+.button.btn
+    background-color:#FFF
+    color:$dark-standard
+    width: 100%
+
+.button.button-loading
+    pointer-events: none
+
+    img
+        height: calc(1.125rem + 0.33rem)

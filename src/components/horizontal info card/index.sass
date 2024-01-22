@@ -1,0 +1,61 @@
+@use  "../../styles/sass/_typography"
+
+.card-of-step-onboarding
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 1rem 1.5rem
+    width: 100%
+    border-bottom: 1px solid var(--color--white-dark)
+
+.inactive--onboarding-card
+    opacity:0.3
+    pointer-events: none
+    
+.card-of-step-right-div
+    display: flex
+
+.btn-for-instruction-wrapper 
+    display: flex
+    justify-content: flex-end
+    width: 10rem
+
+.btn-for-instruction-wrapper > .check-icon__wrapper
+    width: 2.25rem
+    height: 2.25rem
+ 
+.check-icon__wrapper > img
+    width: 100% 
+    height: 100%
+
+.active-step-title
+    color: var(--color--black-standard)
+
+.active-step-description
+    color: var(--color--black-light)
+
+.step-body-instruction-wrapper
+    padding-left: var(--padding-16)
+    display: flex
+    gap: .1275rem
+    flex-direction: column
+    align-items: flex-start
+
+.icon-of-step-wrapper
+    width: 3rem
+    height: 3rem
+
+
+.icon-of-step-wrapper > img
+    width: 100%
+    height: 100%
+
+.inactive--onboarding-card > .btn-for-instruction-wrapper > .primary-button--primary 
+    cursor: default 
+
+.user-management-invite-button-content
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: space-between
+    gap: 0.5rem

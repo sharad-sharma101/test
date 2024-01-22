@@ -1,0 +1,49 @@
+@use '../../styles/sass/_mixins' as *
+    
+.app-sidebar__container 
+    display: flex
+    flex-direction: column
+    position: relative
+
+.domain-name-option
+    z-index: 10
+
+.app-dropdown__wrapper
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    padding: var(--padding-12)
+    cursor: pointer
+    background: var(--color-grey-dark)
+    border-radius: var(--border-radius-4)
+    overflow: hidden
+
+.dropdown-selected-option
+    display: flex
+    flex-direction: row
+    align-items: center
+    white-space: nowrap
+
+.option-title
+    > p 
+        color: var(--color--white-dark)
+        height: 1.5rem
+
+.domain-name-option
+    border-radius: 0 
+
+.domain-name-option:hover 
+    background-color: var(--color-black-standard)
+
+.app-dropdown-options
+    @include hide-scroll
+    position: absolute
+    width: 100%
+    top: 3rem
+
+    max-height: 12.5rem
+    overflow: scroll
+
+.selected-domain-name:hover
+    background: var(--color-grey-dark)

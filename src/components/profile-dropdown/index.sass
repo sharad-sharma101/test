@@ -1,0 +1,106 @@
+@use '../../styles/sass' as *
+
+.profile__dropdown-container
+    background-color: $light-standard
+    z-index: 5
+    @include flex(column, start, space-between)
+    border-radius: .25rem
+    position: absolute
+    top: calc( 100% + 1.45rem )
+    right: 0
+
+    // box-shadow: 0px 4px 6px 0px rgb(23 43 77 / 16%)
+    box-shadow: 0 .25rem .75rem -.1rem rgba(23,43,77,.32)
+    .profile-name
+        font-weight: 700
+        font-size: 18px
+        line-height: 22px
+        display: flex
+        align-items: center
+        color: #6B788D
+        background:#F8F9FA
+        padding: 1rem
+        width:100%
+    .profile
+        padding: 1rem
+
+
+.products__container, .profile__footer-section
+    @include flex(row, center, stretch)
+
+.products__container
+    padding: .5rem
+    margin-bottom: .5rem
+    cursor: pointer
+    border-radius: .25rem
+
+    &:hover
+        background-color: $color-primary-faint
+
+    .product-name
+        font-style: normal
+        font-weight: 400
+        font-size: .875rem
+        line-height: 1.25rem
+        color: $dark-standard
+        white-space: nowrap
+
+.product-icon, .footer-section-img
+    width: 1.125rem
+    height: 1.125rem
+    margin-right: .5rem
+
+    img
+        width: 100%
+        height: 100%
+
+.profile__footer
+    width: 100%
+    border-top: 1px solid #EDEEF1
+
+.profile__footer-section
+    padding: .5rem
+    margin-top: .5rem
+    cursor: pointer
+    width: 100%
+
+    &:hover
+        background-color: $color-primary-faint
+
+    .footer-section-text
+        span
+            font-style: normal
+            font-weight: 400
+            font-size: .875rem
+            line-height: 1.25rem
+            color: $dark-standard
+
+
+.profile__dropdown-wrapper
+    visibility: hidden
+    opacity: 0
+    // transition: all 0.3s ease-in-out
+
+.profile__dropdown-wrapper.--visible
+    visibility: visible
+    opacity: 1
+
+
+.profile__body-heading
+    font-style: normal
+    font-weight: 400
+    font-size: .625rem
+    line-height: .75rem
+    color: #6B788D
+    margin-bottom: .5rem
+    display: flex
+    width: 100%
+    justify-content: center
+    align-items: center
+    text-align: center
+    &:before,&:after
+        content: ""
+        border-top: 1px solid #edeef1
+        margin: 0 4px 0 0
+        flex: 1 0 20px
+    

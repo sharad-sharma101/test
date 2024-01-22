@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Support",
+        "link": "",
+        "icon": "/src/assets/images/navbar/message.svg",
+        "openIn": "_blank"
+    },
+    {
+        "name": "Sign Out",
+        "link": "https://demosite.attryb.com/logout",
+        "icon": "/src/assets/images/navbar/sign-out.svg",
+        "openIn": "_self"
+    }
+]

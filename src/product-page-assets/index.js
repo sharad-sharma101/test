@@ -1,0 +1,21 @@
+export { default as notFoundImage } from "./empty-state.svg";
+export { default as trophyImage } from "./home-trophy.png";
+export { default as closeIcon } from "./close.svg";
+export { default as mainProductImage } from "./mainProductImage.svg";
+export { default as smallProduct } from "./smallProduct.svg";
+export { default as star } from "./star.png";
+export { default as halfStar } from "./halfStar.png";
+
+export { default as rowFast } from "./rowFast.svg";
+export { default as open } from "./open.svg";
+export { default as minus } from "./minus.svg";
+export { default as plus } from "./plus.svg";
+export { default as refresh } from "./refresh.svg";
+export { default as search } from "./search.svg";
+export { default as removeIcon } from "./remove-icon.svg";
+export { default as greenClose } from "./greenClose.svg";
+export { default as mobileSlider } from "./mobileSlider.svg";
+export { default as documents } from "./documents.svg";
+export { default as arrowLeft } from "./arrowLeft.svg";
+export { default as accordionArrow } from "./accordionArrow.svg";
+export { default as circleCheck } from "./circleCheck.svg";

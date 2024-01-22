@@ -1,0 +1,25 @@
+.blank-input {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0.17rem 0.5rem 0 rgb(23 43 77 / 24%);
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  line-height: 1.384rem;
+  background: var(--color-white-off);
+  border: 0.0625rem dashed var(--color-grey-3);
+  height: 3.5538rem;
+}
+.blank-input__text {
+  color: #424b53;
+}
+.blank-input img {
+  width: 1.3077rem;
+  height: 1.3077rem;
+  margin: auto 1rem auto 0.5rem;
+}
+
+.meta_title_content .blank-input {
+  margin-bottom: 0.7692rem;
+}

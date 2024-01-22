@@ -1,0 +1,68 @@
+.revoke-popup-body
+    max-width: 23rem
+    z-index: 1
+    padding: 0
+    // margin: 0.25rem
+
+.revoke-popup-header
+    display: flex
+    z-index: 1
+
+.revoke-icons
+    display: flex
+    width: 100%
+    justify-content: space-between
+    align-items: center
+    padding: 0
+    margin: 0
+
+.revoke-left-icon
+    position: relative
+
+.revoke-background-pattern
+    position: absolute
+    top: -1.25rem
+    left: -1.25rem
+
+.revoke-popup-header
+    position: relative
+    color: var(--color--black-normal)
+
+.revoke-popup-description
+    color: var( --color--black-light)
+
+.revoke-submit-button
+    display: flex
+    width: 100%
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    gap: .75rem
+    z-index: 99
+
+.hover-circle 
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    background-color: var(--color--white-off) 
+    border-radius: 50%
+    width: 2.25rem
+    height: 2.25rem
+    opacity: 0
+    transition: opacity 0.3s ease
+    z-index: -1
+
+.revoke-cross-wrapper  
+    border-radius: 50%
+    cursor: pointer
+    padding: 0.5rem
+    width: 2.75rem
+    height: 2.75rem
+    display: flex
+    align-items: center
+    justify-content: center
+    &:hover
+        background:  var(--color--white-off)
+       
+

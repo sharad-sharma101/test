@@ -1,0 +1,203 @@
+@use "../../../styles/sass" as *
+
+.template-card
+    @include flex(column, center, center)
+    position: relative
+    border-radius: var(--border-radius-4)
+    background: var(--color-white-faint)
+    width: 15.75rem
+    min-height: 13.5rem
+    border: 2px solid var(--color-white-faint)
+    transition: border-color 200ms 
+    margin-bottom: .1rem
+
+    .selection-overlay
+        display: none 
+    .option-on-template-card-wrapper 
+        display: none
+    &:hover    
+        
+        .selection-overlay
+            @include flex(column, center, center)
+            height: 3rem
+            background: rgba(52, 64, 84, 0.15)
+            inset: 0rem 
+            position: absolute 
+            width: 100%
+            top: 8.8rem
+            
+        .option-on-template-card-wrapper
+            @include flex(row, center, flex-end) 
+            width: 100%
+            position: absolute 
+            width: 100%
+            padding: var(--padding-8)
+            bottom: 0
+
+        .template-snapshot
+            box-shadow: 0px 2px 4px -2px rgba(16, 24, 40, 0.06), 0px 4px 8px -2px rgba(16, 24, 40, 0.10)
+
+
+    .template-snapshot
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 15.75rem
+        height: 11.75rem
+        margin-bottom: .75rem
+        background: var(--color--white-off)
+        border: 2px solid var(--color-white-faint)
+        overflow: hidden
+        position: relative
+
+        .background-image-wapper
+           width: 15.75rem
+           height: 11.25rem 
+
+           img
+            width: 100%
+            height: 100%
+
+        img
+            width: 100%
+            height: 100%
+
+    .template-card__body
+        @include flex(row, flex-start, flex-start)
+        width: 100%
+        position: relative
+        transition: color .2s ease-in-out
+        align-items: center
+        z-index: 2
+
+        .template-name-wrapper
+            flex-basis: 60%
+            display: flex
+            justify-content: flex-start
+        
+        .template-metrices-wrapper 
+            flex-basis: 40%
+            display: flex 
+            justify-content: flex-end 
+            align-items: center
+
+.template-name 
+    color: var(--color--black-dark)
+
+.template-cr 
+    color: var(--color-light-gray)
+
+.template-snapshot.--active  
+    border: 2px solid var(--color-primary-standard)
+
+.preview-screen-wrapper
+    position: absolute
+    width: 120rem
+    height: 67.5rem 
+    transform: scale(0.14 , 0.2)
+    transform-origin: top left
+    top: 0
+    left: 0
+
+    .preview-iframe
+        height: 100% !important
+        width: 100% !important
+.preview-screen-wrapper.preview-section-structure
+    transform: scale(0.13)
+
+.template-snapshot 
+    img
+        width: 100% 
+        height: 100%
+
+
+.preview-screen-wrapper-template
+    width: 1920px
+    height: 1080px
+    pointer-events: none
+    position: absolute
+    transform: scale(0.24)
+    transform-origin: top left
+    top: -62px
+    left: -138px
+
+    .preview-iframe
+        height: 100% !important
+        width: 100% !important
+.preview-screen-carousel-wrapper
+
+    .background-image-wapper
+           position: absolute
+           width: 15.75rem
+           height: 11.25rem 
+           top: 0 
+           left: 0
+
+           img
+            width: 100%
+            height: 100%
+
+    .preview-screen-wrapper-carousel
+        width: 1920px
+        height: 23rem
+        pointer-events: none
+        position: absolute
+        z-index: 20
+        transform: scale(0.24)
+        transform-origin: top left
+        left: .3125rem
+
+        .preview-iframe
+            height: 100% !important
+            width: 100% !important
+
+.option-template-card-icon-container
+    display: flex
+
+    .image-wrapper
+        width: 2rem
+        height: 2rem
+        padding: var(--padding-8)
+        transition: background 0.3s delay
+        cursor: pointer
+
+        img
+            width: 100% 
+            height: 100%
+
+        &:hover
+            border-radius: var(--border-radius-4)
+            background: var(--color--white-off)
+            box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05)
+
+.innerTemplateSelector
+    position: absolute 
+    left: 0
+    top: 0
+    width: 15.75rem
+    height: 8rem
+    z-index: 3
+
+.template-card.--active 
+    .template-name
+        color: var(--color-primary-standard)
+    .template-cr
+        color: var(--color-primary-standard)
+
+@media only screen and (min-width: $breakpoint-mobile) and (max-width: $breakpoint-tablet)
+    .preview-screen-wrapper-template
+        transform: scale(0.14)
+        top: -1.875rem
+        left: -4.625rem
+        
+@media only screen and (min-width: $breakpoint-tablet) and (max-width: 1600px)
+    .preview-screen-wrapper-template
+        transform: scale(0.26)
+        top: -60px
+        left: -142px
+
+@media only screen and (min-width: 1600px)
+    .preview-screen-wrapper-template
+        transform: scale(0.3)
+        top: -70px
+        left: -165px

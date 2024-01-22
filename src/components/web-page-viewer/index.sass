@@ -1,0 +1,103 @@
+#usecase-preview
+    width: 100%
+    height: 100%
+    border: none
+.border-iframe-website-viewer
+    border: 1px solid var(--color--white-dark)
+    height: 100%
+    border-bottom-left-radius: 8px
+    border-bottom-right-radius: 8px
+.web-page-viewer 
+    position: absolute 
+    top: 0 
+    left: 0
+.web-page-viewer.full-screen
+    height: calc(100vh - 3rem)
+    width: 100vw
+    position: fixed
+    top:0
+    left:0
+    z-index: 999
+    background: var(--color-white-faint)
+    // background: green
+    .border-iframe-website-viewer
+        height: 130% !important
+        border-radius: var(--border-radius-8)
+        // transform: scale(0.667)
+        transform-origin: top left
+.web-page-viewer.desktop
+    width: 100%
+    height: 100%
+    .border-iframe-website-viewer
+        border-radius: var(--border-radius-8)
+        transform-origin: top left
+        position: absolute
+
+.web-page-viewer.tablet
+    width: 100%
+    height: 100%
+    .border-iframe-website-viewer
+        border-radius: var(--border-radius-8)
+        transform-origin: top left
+        position: absolute
+
+.web-page-viewer.mobile
+    width: 100%
+    height: 100%
+    .border-iframe-website-viewer
+        border-radius: var(--border-radius-8)
+        transform-origin: top left
+        position: absolute
+//web page 
+.web-page-viewer.full-screen-expand
+    height: calc(100vh - 3rem)
+    width: 100vw
+    position: fixed
+    top:0
+    left:0
+    z-index: 999
+    background: var(--color-white-faint)
+    // background: green
+    .border-iframe-website-viewer
+        height: 100%
+        border-radius: var(--border-radius-8)
+        transform-origin: top left
+.web-page-viewer.desktop-expand
+    height: calc(100vh - 3rem)
+    width: 100vw
+    left: 0
+    z-index: 999
+    background: var(--color-white-faint)
+    .border-iframe-website-viewer
+        border-radius: var(--border-radius-8)   
+        transform-origin: top left
+
+.web-page-viewer.tablet-expand
+    height: calc(100vh - 3rem)
+    width: 60rem
+    top:0
+    left:50%
+    transform: translate(-50%, 0%)
+    z-index: 999
+    background: var(--color-white-faint)
+    .border-iframe-website-viewer
+        border-radius: var(--border-radius-8)
+        transform-origin: top left
+
+.web-page-viewer.mobile-expand
+    height: calc(100vh - 3rem)
+    width: 30rem
+    top:0
+    left:50%
+    z-index: 999
+    background: var(--color-white-faint)
+    transform: translate(-50%, 0%)
+    &:hover
+        content:""
+        background: var(--color-white-faint)
+    .border-iframe-website-viewer
+      
+        border-radius: var(--border-radius-8)
+      
+        transform-origin: top left
+

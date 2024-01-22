@@ -1,0 +1,133 @@
+// Implement this in actual codebase
+.Specification {
+  &[data-comp-active="true"] {
+    box-shadow: 0 0.25rem 2rem -0.5rem rgb(23 43 77 / 32%);
+    position: relative;
+    z-index: 1;
+    border-radius: 0.5rem;
+  }
+  height: 6.6154rem;
+
+  .spec-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0.5rem 1rem 1rem 1rem;
+
+    background: #ffffff;
+    border-radius: 0.5rem;
+    position: relative;
+
+    .spec-card__remove {
+      position: absolute;
+      top: -0.5rem;
+      right: -0.5rem;
+      height: 2rem;
+      width: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0px 0.125rem 0.25rem 0 rgba(23, 43, 77, 0.24);
+      border: 1px solid transparent;
+      border-radius: 99rem;
+      background: #fff;
+      z-index: 3;
+      color: #9c0006;
+      cursor: pointer;
+      transition: all 200ms ease-out;
+
+      &:hover {
+        box-shadow: 0px 0.25rem 0.5rem 0 rgba(23, 43, 77, 0.4);
+      }
+
+      &:active {
+        border: 1px solid #9c000632;
+        box-shadow: none;
+      }
+    }
+
+    .row {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+
+    .spec-card__label {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1rem;
+      line-height: 1.375rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-grey-5);
+      margin: 0 0.5rem 0.5rem 0;
+
+      span {
+        display: flex;
+        margin-right: 0.5rem;
+      }
+    }
+
+    .spec-card__label-edit {
+      cursor: pointer;
+      transition: all 200ms ease-out;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 1.3077rem;
+      &:hover {
+        color: #172b4d;
+        filter: brightness(0);
+      }
+    }
+
+    .spec-card__value {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: flex-start;
+    }
+
+    .spec-card__input {
+      background: #ffffff;
+      border: 1px solid var(--color-black-subdued);
+      border-radius: 0.33rem;
+      padding: 0.67rem 1rem;
+      width: 100%;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1rem;
+      line-height: 1.375rem;
+      color: #172b4d;
+
+      &:focus {
+        border: 1px solid #6e40ff;
+        outline: none;
+      }
+    }
+  }
+}
+
+.LabelInput {
+  border: none;
+  outline: none;
+  color: #172b4d;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.375rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0;
+
+  &:focus,
+  &:active {
+    border: none;
+    outline: none;
+  }
+}

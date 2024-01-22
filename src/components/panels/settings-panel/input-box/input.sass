@@ -1,0 +1,42 @@
+@use '../../../../styles/sass' as *
+    
+.absolute-field-container
+    // visibility: hidden
+    opacity: 0.5
+    background-color: var(--color-white-light)
+    max-width: 5rem
+    transition: all 0.2s ease-out
+    padding: .67rem 1rem
+
+    input
+        background-color: var(--color-white-light)
+        pointer-events: none
+
+.absolute-field-container.--visible
+    background-color: $light-faint
+    visibility: visible
+    opacity: 1
+
+    input
+        background-color: $light-faint
+        pointer-events: auto
+
+.variables-input-container
+    @include flex(row, center, space-around)
+    padding: 0 .5rem
+    gap: 1rem
+    margin-top: 1rem
+
+    > .input-label-container
+        margin: 0
+
+        .input-contianer
+            padding: .67rem 1rem
+
+.absolute-field-container, 
+    .meta-field-units
+        margin-top: 1.375rem
+
+.meta-field-units
+    .List
+        min-width: 7rem

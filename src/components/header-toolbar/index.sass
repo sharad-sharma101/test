@@ -1,0 +1,68 @@
+@use '../../styles/sass' as * 
+
+.app-browser-toolbar
+    @include flex(row, center, space-between)
+
+    min-height: 2.5rem
+    padding: .5rem 0 .5rem  1.5rem
+    padding-right: 1.5rem
+    border-top-left-radius: .625rem
+    border-top-right-radius: .625rem
+    background-color: $light-standard
+
+    // box-shadow: 0 4px 8px -3px rgb(0 0 0 / 40%)
+    z-index: 2
+    position: relative
+    border:1px solid $border-stardard-light
+    border-bottom: none
+    
+
+.AppBrowser-title, .AppBrowser-expandLabel
+    font-size: 1rem
+    font-weight: bold
+    line-height: 1.5rem
+    color: $dark-standard
+
+.AppBrowser-expandLabel
+    padding: 0 .9375rem
+
+.AppBrowser-expand
+    background-color: transparent
+    outline: none
+    border: none
+
+    @include flex(row, center, center)
+
+.AppBrowser-expandIcon
+    position: relative
+    display: flex
+    overflow: hidden
+    justify-content: center
+    align-items: center
+    width: 1.5rem
+    height: 1.5rem
+    // border-top-right-radius: .625rem
+    // background-color: $primary-standard
+
+    transition: background-color .3s
+    cursor: pointer
+
+    img
+        width: 100%
+        height: 100%
+
+    // &:hover
+    //     background-color: $dark-standard
+
+
+
+.browser-toolbar-head.left,
+.browser-toolbar-head.right
+    @include flex(row, center, center)
+    gap: 1rem
+
+.List
+    .list-select
+        button 
+            > span
+                width: auto

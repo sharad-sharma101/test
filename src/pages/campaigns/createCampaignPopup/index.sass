@@ -1,0 +1,121 @@
+.create-campaign-popup-container
+    position: relative
+    width: 100%
+    margin: auto
+
+.create-campaign-icons 
+    position: relative
+    width: 100%
+    display: flex
+    flex-direction: row
+    justify-content: flex-end
+    align-items: center
+    margin-bottom: 4.25rem
+
+.create-campaign-message-icon 
+    position: absolute
+    top: .25rem
+    left: .06rem
+
+.create-campaign-background-circles 
+    position: absolute
+    top:-1.27rem
+    left:-1.25rem
+    
+.create-campaign-close 
+    position: absolute
+    top: .5rem
+    right: .5rem
+    cursor: pointer
+
+.create-campaign-popup-header-text 
+    position: relative
+    color: var(--color--black-normal)
+    z-index: 1
+
+.create-campaign-input
+    display: flex
+    flex-direction: row
+    justify-content: flex-start
+    align-items: center
+    width: 100%
+    gap: .5rem
+
+.create-campaign-popup-body
+    display: flex
+    flex-direction: column
+    width: 39.34rem
+    overflow: auto
+    gap: 1.5rem
+    padding: .92rem 0.25rem
+    padding-bottom: 3.5rem
+
+.create-campaign-submit-buttons 
+    display: flex
+    flex-direction: row
+    justify-content: flex-end
+    gap: .5rem
+.create-campaign-popup-subheader-text
+    color: var(--color--black-light)
+
+.create-campaign-label-text
+    color: var(--color--black-standard)
+
+.use-case-drop-down-list
+    width: 100%
+    // margin-top: -30px
+    margin-top: -2.875rem
+
+.use-cases-list-item, .segment-list-item
+    .List
+        width: 38.6rem
+        position: absolute
+
+.create-campaign-label-text
+    // margin-top: 25px
+    margin-top: 2.563rem
+
+.segment-drop-down-list, .use-case-drop-down-list
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    justify-content: flex-start
+    gap: .375rem
+
+.create-campaign-close
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+    cursor: pointer
+    margin-right: .5rem
+    margin-top: .67rem
+
+.create-campaign-hover-circle
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    background-color: var(--color--white-off) 
+    border-radius: 50%
+    width: 2.25rem
+    height: 2.25rem
+    opacity: 0
+    transition: opacity 0.3s ease
+    z-index: -1
+.hover-icon
+    display: none
+
+.create-campaign-close:hover img.default-icon 
+    display: none
+
+.create-campaign-close:hover img.hover-icon 
+    display: block
+.create-campaign-close:hover .create-campaign-hover-circle
+    opacity:1
+.footer-container--popup
+    display: flex
+    flex-direction: column
+
+.create-campaign-popup-body .list-container > .list-body
+    max-height: 9rem !important

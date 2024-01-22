@@ -1,0 +1,111 @@
+@use '../../../styles/sass' as * 
+    
+.use-cases-container
+    background-color: var(--color-white-faint)
+    height: 100%
+    flex: 1
+    height: auto
+
+.Doc
+    padding-top: 4rem
+
+.DocEntry
+    width: 50%
+    margin: auto
+    display: grid
+    grid-template-columns: 1fr
+    grid-auto-rows: max-content
+    gap: 2rem
+    padding: 2rem
+    background-color: #FFF
+    border-radius: 1rem
+    border-bottom: 1px solid #e6e9eb
+    h3
+        margin: 0
+        padding: 0 2rem
+        color: #475569
+        font-weight: 500
+    .Example
+        display: flex
+        gap: 0.67rem
+        background: #fff
+        border: 1px solid #e6e9eb
+        padding: 2rem
+        border-radius: 1rem
+        flex-direction: column
+        align-items: flex-start
+        transition: all 300ms ease-out
+
+        .use-case-container__text
+            display: flex
+            justify-content: center
+            align-items: center   
+            cursor: pointer  
+            gap: 1rem 
+
+            .use-case-container__text-img
+                width: 1.3846rem
+                height: 1.3846rem
+                img
+                    width: 100%    
+                    height: 100%    
+
+        article
+            display: block
+            margin-top: 2rem
+            border-left: 3px solid #e6e9eb
+            padding: 0.67rem 0 0.67rem 1rem
+            width: 100%
+            color: #475569
+            transition: all 500ms ease-out
+            &:hover
+                color: #0f172a
+                border-left: 3px solid #475569
+        &:hover
+            border: 1px solid #cbd5e1
+
+
+.usecase-container 
+    background: var(--color--white-faint)
+    display: flex
+    height: 100dvh
+    overflow: auto
+    flex: 1
+    flex-direction: column
+    align-items: center
+    padding: 0 var(--padding-96)
+
+.usecase-heading-wrapper
+    display: flex
+    padding: var(--padding-12) 0
+    width: 100%
+    justify-content: space-between
+    align-items: center
+
+.usecase-right-buttons
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    gap: .75rem
+
+.table-wrapper
+    display: flex
+    flex-direction: column
+.line-loading
+    opacity: 0.7
+
+.metric-card--wrapper
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    gap: 1.5625rem
+    box-sizing: border-box
+    width: 100%
+    img
+        width: 100%
+
+// Change below breakpoint with css variables
+@media only screen and (max-width: 1280px)
+    .metric-card--wrapper
+        grid-template-columns: repeat(2, 1fr)
+        gap: 1.25rem

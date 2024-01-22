@@ -1,0 +1,48 @@
+@use '../../../styles/sass' as *
+
+.app-button
+    border-radius: var(--border-radius-8)
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: var(--padding-8) var(--padding-16)
+    cursor: pointer
+    background-color: var(--color-white-faint)
+    color: var(--color-primary-standard)
+    border: 1px solid var(--color-primary-standard)
+    width: 100%
+
+.app-button.btn-loading
+    pointer-events: none
+
+.app-button:hover
+    color: var(--color-white-faint)
+    background-color: var(--color-primary-standard)
+
+.app-button.primary-solid 
+    color: var(--color-white-faint)
+    background: var(--color-primary-standard)
+
+.app-button.primary-solid:hover 
+    background: var(--color--primary-standard)
+
+.app-button.outline
+    color: var(--color--black-standard)
+    border: 1px solid var(--color--grey-off)
+    background: var(--color-white-faint)
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05)
+    &:hover
+        background: var(--color--white-off)
+
+.app-button.danger
+    background-color: #FEF3F2
+    border: 1px solid #FECDCA
+    box-shadow: 0px 1px 2px 0px #1018280D
+    color:#B42318
+    &:hover
+        background-color: #FEE4E2
+
+.app-button__loader
+    display: flex
+    height: 1.249rem
+    justify-content: center

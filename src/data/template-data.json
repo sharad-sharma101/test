@@ -1,0 +1,26 @@
+[
+    { 
+    "id": "Product ID", 
+    "city": "{city.name}",  
+    "title": "Shopify Product",       
+    "final_price": "₹ {product.price}", 
+    "product_URL": "", 
+    "product_image_URL": "https://dev.personalization.attryb.com/template-assets/placeholder_image.svg" 
+    },
+    { 
+    "id": "Product ID", 
+    "city": "{city.name}",  
+    "title": "Shopify Product",       
+    "final_price": "₹ {product.price}", 
+    "product_URL": "", 
+    "product_image_URL": "https://dev.personalization.attryb.com/template-assets/placeholder_image.svg" 
+    },
+    { 
+    "id": "Product ID", 
+    "city": "{city.name}",  
+    "title": "Shopify Product",       
+    "final_price": "₹ {product.price}", 
+    "product_URL": "", 
+    "product_image_URL": "https://dev.personalization.attryb.com/template-assets/placeholder_image.svg" 
+    }
+]

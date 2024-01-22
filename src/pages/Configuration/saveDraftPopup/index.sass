@@ -1,0 +1,92 @@
+.configuration-cross-popup-body
+    width: 100%
+    max-width: 22.34rem
+    z-index: 1
+    padding: 0
+    margin: 0
+
+.configuration-cross-popup-header
+    display: flex
+    width: 100%
+    z-index: 1
+
+.configuration-cross-popup-icons
+    display: flex
+    width: 100%
+    justify-content: space-between
+    align-items: center
+    padding: 0
+    margin: 0
+
+.configuration-cross-popup-left-icon
+    position: relative
+    width: 100%
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+
+.configuration-popup-background-pattern
+    position: absolute
+    top: -1.25rem
+    left: -1.25rem
+
+
+.configuration-cross-popup-heading
+    position: relative
+    color: var(  --color--black-normal)
+
+.configuration-cross-popup-description
+    color: var(--color--black-light)
+
+.configuration-cross-popup-button
+    display: flex
+    width: 100%
+    justify-content: space-between
+    flex-direction: row
+    align-items: center
+    gap: .75remrem
+    z-index: 99
+    
+.configuration-popup-cross
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+    cursor: pointer
+    margin-right: 1rem
+    margin-top: -1rem
+    
+.configuration-popup-hover-circle
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    background-color: var(--color--white-off) 
+    border-radius: 50%
+    width: 2.25rem
+    height: 2.25rem
+    opacity: 0
+    transition: opacity 0.3s ease
+    z-index: -1
+
+
+.hover-icon
+    display: none
+
+.configuration-popup-cross:hover img.default-icon 
+    display: none
+
+.configuration-popup-cross:hover img.hover-icon 
+    display: block
+.configuration-popup-cross:hover .configuration-popup-hover-circle
+    opacity:1
+
+.configuration-popup-save
+    width: 100%
+
+.configuration-popup-mail-icon
+    min-width: 3.5rem
+    min-height: 3.5rem
+    img
+        width: 100%
+        height: 100%

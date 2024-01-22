@@ -1,0 +1,40 @@
+.trigger-input--container
+    background: var(--color-white-faint)
+    display: flex
+    height: 2.5rem
+    width: 13.5rem
+    border: 1px solid var(--color--grey-off)
+    border-radius: var(--border-radius-4)
+    &:focus-visible
+        border: none
+        outline: none  
+    &:focus
+        box-shadow: 0px 0px 0px 4px #F4EBFF, 0px 1px 2px 0px rgba(16, 24, 40, 0.05) 
+
+    input[type=number]
+        display: flex
+        padding: var(--padding-10) var(--padding-14)
+        gap: 0.5rem
+        width: 8rem
+        border: none
+        color: var(--color-light-gray) 
+        -moz-appearance: textfield  
+        &:focus-visible
+            border: none
+            outline: none  
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button
+            -webkit-appearance: none
+            margin: 0
+
+    .unitvalue-wrapper
+        min-width: 5.5rem
+        display: flex 
+        align-items: center
+        justify-content: center
+        align-content: center 
+        padding: var(--padding-10) var(--padding-14)
+        border-left: 1px solid var(--color--grey-off)
+
+        p
+            white-space: nowrap

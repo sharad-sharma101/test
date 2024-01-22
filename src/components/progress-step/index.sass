@@ -1,0 +1,40 @@
+.progress-step--wrapper
+    display: flex
+    flex-direction: column
+    padding-bottom: var(--padding-16)          
+    width: 22rem 
+    border-bottom: 4px solid var(--color--white-dark)
+    cursor: pointer
+    height: 100%
+    position: relative
+
+.progress-step--wrapper.completely 
+    border-bottom: 4px solid var(--color-primary-standard)
+
+.progress-step--wrapper.uncompletely 
+    border-bottom: 4px solid
+    border-image: linear-gradient(to right,var(--color-primary-standard) 50%, var(--color--white-dark) 50%)
+    border-image-slice: 1
+
+.progress-stage
+    color: var(--color--white-light)
+
+.progress-stage.completely 
+    color: var(--color--black-standard)
+
+.progress-stage.uncompletely 
+    color: var(--color--black-standard)
+
+.progress-step-instruction
+    color: var(--color--white-light)
+
+.progress-step-instruction.completely 
+    color: var(--color--black-standard)
+
+.progress-step-instruction.uncompletely 
+    color: var(--color--black-standard)
+
+
+
+.current-tab-active-color
+    color: var(--color-primary-standard)

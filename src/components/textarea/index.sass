@@ -1,0 +1,22 @@
+@use '../../styles/sass' as *
+
+.app-textarea
+    padding: .75rem
+    width: 100%
+    border-radius: 6px
+
+    font-style: normal
+    font-stretch: normal
+    letter-spacing: normal
+
+    font-size: 0.875rem
+    line-height: 1.25rem
+
+    resize: none
+    height: 5.3125rem
+    border: 1px solid rgba(42, 47, 58, 0.2)
+    transition: all 0.25s
+
+    &:focus-within
+        outline: $primary-standard
+        border: 1px solid $primary-standard

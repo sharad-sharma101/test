@@ -1,0 +1,480 @@
+*
+    font-family: Inter
+.placements-page-wrapper
+    display: flex
+    gap: 0rem
+    height: 100%
+    width: 100%
+    // overflow: hidden
+@mixin placement-arrow-wrapper
+    height: 1.25rem
+    width: 1.25rem
+    img
+        width:100%
+        height: 100%
+    
+.placements-page-sidebar
+    display: flex
+    padding: 0px
+    gap: 0.5rem
+    flex-direction: column
+    width: 100%
+    
+
+.switch-buttons-placements
+    display: flex
+    padding-left: var(--padding-24)
+    justify-content: space-between
+    height: fit-content
+
+.button-placements
+    padding: var(--padding-12)
+    width: 50%
+    text-align: center
+    border-bottom: 2px solid var(--color--white-dark)
+    cursor: pointer
+    // border: 1px solid red
+    
+    .button-title-text
+        color: var(--color-light-gray)
+    &:hover
+        border-bottom: 2px solid var(--color--primary-standard)
+        // background: var(--color--primary-faint)
+        transition: all 0.5ms linear
+        
+
+.selected-button-placements
+    padding: var(--padding-12)
+    text-align: center
+    width: 50%
+    border-bottom: 2px solid var(--color--primary-standard)
+    background: var(--color--primary-faint)
+    cursor: pointer
+    .button-title-text
+        color: var(--color--primary-standard)
+       
+.position-parent-wrapper
+    display: flex
+    gap: 1rem
+    flex-direction: column
+    padding: var(--padding-16) 0
+    
+.positions-button-wrapper-parent
+    display: grid
+    grid-template-columns: repeat(3,1fr)
+    gap: 0.5rem
+    text-align: center
+.position-setting-button
+    padding: var(--padding-12)
+    border-radius: 0px
+    background: var(--color--white-off)
+    min-height: 3.3rem 
+    .position-button-title
+        color: var(--color--black-standard)
+        
+.positions-button-wrapper
+    display: flex
+    justify-content: space-between
+    width: 100%
+    gap: 2rem
+    margin: auto
+    text-align: center
+    // border:1px solid red
+
+
+.positions-button-placements
+    padding: var(--padding-12) var(--padding-18)
+    cursor: pointer
+    border-radius: var(--border-radius-6)
+    min-width: 10.375rem
+    .position-title-text
+        color: var(--color-light-gray)
+    &:hover
+        background: var(--color--white-off)
+        .position-title-text
+            color: var(--color--black-standard)
+
+        
+.selected-positions-button-placements
+    text-align: center
+    padding: var(--padding-12) var(--padding-18)
+    min-width: 10.375rem
+    border-radius: var(--border-radius-6)
+    background: var(--color--white-off)
+    cursor: pointer
+    .position-title-text
+        color: var(--color-black-standard)
+    &:hover
+        color: var(--color--black-standard)
+
+.website-viewer-container
+    flex: 1
+
+
+.transition-options-dropdown
+
+    padding-left: var(--padding-48)
+    padding-right: var(--padding-24)
+    display: flex
+    flex-direction: column
+    gap: 0.375rem
+
+.drag-and-drop-wrapper
+    display: flex
+    gap: 0.25rem
+    justify-content: space-between
+    width: 100%
+    cursor: not-allowed
+    pointer-events: none
+    margin-top: 1.5rem
+
+.drag-drop-child-first
+    display: flex
+    gap: 0.5rem
+    align-items: center
+    justify-content: space-between
+.drag-drop-text
+    color: var(--color--black-standard)
+.drag-drop-supporting-text-placements
+    color: var(--color--black-standard)
+
+.icon-wrapper
+    width: 1.25rem
+    height: 1.25rem
+    cursor: pointer
+    img
+        height: 100%
+        width: 100%
+.wrapper-second-block-placements
+    position: relative
+    left: 0
+    width: 100%
+    margin: auto
+    display: flex
+    flex-direction: column
+    height: 100%
+    top: 0
+    flex: 1
+    z-index: 1
+    background: var(--color--white-off)
+
+.wrapper-second-block-placements-expand
+    position: fixed
+    left: 0
+    width: 100%
+    margin: auto
+    display: flex
+    flex-direction: column
+    height: 100%
+    top: 0
+    flex: 1
+    z-index: 1
+    background: var(--color--white-off)
+
+.responsive-wrapper-parent
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 60rem
+    background: white
+    padding: var(--padding-4) var(--padding-64)
+.responsive-wrapper-parent.navbar-size-fixed 
+    padding: var(--padding-6) var(--padding-64)
+    width: 100% !important
+    min-height: 3.3rem !important
+
+.responsive-wrapper-icons
+    display: flex
+    gap: 0.25rem
+    min-width: 17rem
+    
+.preview-website-wrapper-parent-
+    position: relative
+    height: 100% 
+    width: 100%
+    border: 1px solid var(--color--white-dark)
+    border-left: 0px
+
+.preview-website-wrapper-parent-expand-view
+    height: 100vh
+    width: 100vw
+    position: fixed
+    top:0
+    left:0
+    background: var(--color-white-faint)
+    z-index: 5
+    
+.position-setting-button 
+    border-bottom: 2px solid  var(--color--white-dark)
+
+.responsive-wrapper-parent.navbar-size-fixed
+    border-top: 2px solid  var(--color--white-dark)
+
+.placement-and-variable-wrapper .navigation-left-sidebar-template
+    border-top: 2px solid  var(--color--white-dark)
+
+.parent-placements-main-wrapper
+    width: 25rem
+    display: flex
+    align-items: center
+    flex-direction: column
+    justify-content: space-between
+    border-top: 2px solid  var(--color--white-dark)
+    border-right: 2px solid  var(--color--white-dark)
+    overflow: auto
+    &::-webkit-scrollbar
+        display: none
+
+.static-placement-box-wrapper
+    display: flex
+    flex-direction: column
+    padding: 0rem var(--padding-20)
+    gap: 1.5rem
+
+.static-placement-positions-box
+    display: grid
+    grid-template-columns: repeat(3,1fr)
+    margin: auto
+    text-align: center
+    gap: 2px
+    border-radius: var(--border-radius-8)
+    cursor: pointer
+    border: 5px solid var(--color--black-standard)
+    width: fit-content
+    background: var(--color--primary-frontend)
+    background: var(--color--primary-frontend)
+    box-sizing: border-box
+
+    .placement-position-box
+        width: 4rem
+        box-sizing: border-box
+        height: 2.4rem
+        background: var(--color-white-faint)
+        // border-radius: 4px 0px 0px 0px
+        &:hover
+            background: var(--color--primary-faint)
+
+.placement-position-box-selected
+    background: var(--color--primary-frontend)
+
+.round-corner-left
+    border-radius: var(--border-radius-4) 0px 0px 0px
+
+.round-corner-bottom-left
+    border-radius: 0px 0px 0px var(--border-radius-4)
+.round-corner-top-right
+    border-radius: 0px var(--border-radius-4) 0px 0px
+.round-corner-bottom-right
+    border-radius: 0px 0px var(--border-radius-4) 0px
+
+.static-placement-text
+    color: var(--color-grey-dark)
+.placement-header-wrapper
+    display: flex
+    flex-direction: column
+    gap: 0.75rem
+    .sub-heading-placement-header
+        color: var(--color-light-gray)
+.info-icon-placement-wrapper
+    width: 1rem
+    height: 1rem
+    img
+        width: 100%
+        height: 100%
+    
+.transition-item-list-wrapper
+    width: 23rem
+    height: 2.5rem
+    flex-direction: column
+    padding: 0 
+    margin: auto
+    display: flex
+    gap: 0.5rem
+    .List
+        width: 100%
+        height: 100%
+        .list-select
+            .Button
+                height: 2.5rem
+
+
+.postion-buttons-wrapper-top-bottom
+    display: flex
+    justify-content: space-between
+    gap: 0.75rem
+    .Button
+        // min-width: 80px
+
+.button-position-fixed-width
+    width: 11.125rem
+.button-position-fixed-width-selected
+    width: 11.125rem
+    border: 1px solid var(--color--grey-off)
+    background: var(--color-white-faint)
+    box-shadow: 0px 0px 0px 4px #F2F4F7, 0px 1px 2px 0px rgba(16, 24, 40, 0.05)
+   
+.fixed-wrapper-responsive
+    position: fixed
+    top:0
+    left:0
+    z-index: 1000
+    width: 100%
+    padding: var(--padding-4) var(--padding-64)
+    text-align: center
+
+    // background: red
+    div
+        // border: 1px solid red
+
+.screen-icons-parent-wrapper
+    padding: var(--padding-8) var(--padding-12)
+    cursor: pointer
+    &:hover
+        background: var(--color--primary-faint)
+
+.screen-icons-selected
+    background: var(--color--primary-faint)
+  
+.placement-section-wrapper-up-arrow
+    @include placement-arrow-wrapper
+
+.placement-section-wrapper-down-arrow
+    @include placement-arrow-wrapper
+    rotate: 180deg
+.placement-section-layout-wrapper
+    display: flex
+    gap: 0.5rem
+
+
+
+.characters 
+  list-style-type: none
+  padding: 0
+  display: flex
+  flex-direction: column
+
+
+
+
+.non-draggable-item
+  background-color: #ffffff
+  padding: 8px
+  margin: 4px 0
+  border: 1px solid #ddd
+  border-radius: 4px
+  transition: background-color 0.2s ease
+  user-select: none
+  opacity: 0.7
+  color: black
+
+
+.draggable-item
+  background-color: blue
+  padding: 8px
+  margin: 4px 0
+  border: 1px solid #ddd
+  border-radius: 4px
+  transition: background-color 0.2s ease
+  user-select: none
+  color: white
+  
+.cursor-pointer-img-wrapper
+   width: 1.25rem
+   height: 1.25rem
+   text-align: center
+   cursor: pointer
+   img
+    width: 100%
+    height: 100%
+
+
+.dynamic-cursor-input-wrapper
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+
+
+.dynamic-cursor-input-wrapper
+    display: flex
+    align-items: center
+    justify-content: space-between
+    gap: 1rem
+    // .List
+    //     width: 100%
+    //     height: 100%
+    //     .list-select
+    //         .Button
+    //             width: 100%
+
+.inspector-on-off-button
+    display: flex
+    padding: var(--padding-10) var(--padding-16)
+    justify-content: center
+    gap: 0.5rem
+    align-items: center
+    border-radius: 4px
+    border: 1px solid var(--color--grey-off)
+    background: var(--color-white-faint)
+    cursor: pointer
+    transition: 300ms all
+    box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.04), 2px 2px 4px 0px rgba(0, 0, 0, 0.04), -4px -4px 6px 0px rgba(241, 241, 241, 0.20), -6px -6px 8px 0px rgba(241, 241, 241, 0.20)
+    &:hover
+        background: var(--color-white-off)
+
+    p
+        color: var(--color--black-standard)
+.clicked-inspector-state
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.12) inset
+.inspector-on-off-button
+    &:active
+        box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.12) inset
+        
+
+.dynamic-placement-alert-message
+    position: relative
+    display: flex
+    padding: var(--padding-16)
+    flex-direction: column
+    gap: 1rem
+    border-radius: 4px
+    border: 1px solid var(--color--primary-normal)
+    background: var(--color-info-background)
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05)
+    margin: 1rem
+
+.alert-heading-placement
+    color: var(--color--primary-standard)
+
+.alert-sub-heading-placement
+    color: var(--color--primary-frontend)
+
+.dynamic-alert-wraper-child
+    display: flex
+    flex-direction: column
+    gap: 0.25rem
+
+.featured-alert-icon-placement
+    width: 2.6563rem
+    height: 2.6563rem
+    margin-left: -0.7031rem
+    img
+        width: 100%
+        height: 100%
+
+
+.custom-list-dynamic-placement
+    display: flex
+    padding: var(--padding-10) var(--padding-14)
+    justify-content: flex-end
+    align-items: center
+    gap: 0.5rem
+    align-self: stretch
+    border-radius: 4px
+    border: 1px solid var(--color--white-dark)
+    background: var(--color-grey-faint)
+
+.list-instruction-text
+    color: var(--color--black-standard)
+    span
+        color: var(--color--black-normal)

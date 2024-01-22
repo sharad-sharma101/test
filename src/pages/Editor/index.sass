@@ -1,0 +1,45 @@
+@use "../../styles/sass" as *
+    
+.editor-section-wrapper
+    width: 100%
+    height: 100%
+    display: flex 
+    justify-content: center 
+    
+    .app-header__subheading
+        width: 100%
+        @include flex(row, center, space-between)
+
+    .app-header__template-name
+            @include flex(row, center, center)
+            cursor: pointer
+
+            .EditableContent
+                border-radius: 2px
+                font-weight: 500
+                font-size: 1.2308rem
+
+            .EditableContentBlock[data-editing=true]
+                box-shadow: none !important
+                background-color: var(--color-grey-1)
+
+            .template-name__container
+                padding: 0.5rem   
+                border-radius: 50%  
+
+                &:hover
+                    background-color: var(--color-grey-1)
+
+
+                .template-name__edit-icon
+                    // margin-left: 0.5rem 
+                    width: 1.5385rem
+                    height: 1.5385rem
+
+                    svg
+                        width: 100%
+                        height: 100%
+
+    .btn-group
+        @include flex(row, center, space-between)
+        gap: 16px
